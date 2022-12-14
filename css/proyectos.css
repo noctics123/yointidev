@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EDEDED;
+}
+.header{
+    background-color: #191818;
+    height: 85px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px 5%;
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-link{
+    color: #EDEDED;
+    text-decoration: none;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+
+}
+.nav-menu{
+    display: flex;
+    margin-right: 20px;
+    list-style: none;
+    padding: 0 10px;
+}
+
+.nav-menu-item{
+    font-size: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 80px;
+    margin: 0 20px;
+    font-family:  'Inter', sans-serif;
+    width: max-content;
+   
+}
+.nav-menu li a:hover{
+    color: #FFB602;
+}
+.nav-menu li:hover{
+    transform: scale(1.1);
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    
+    display: none;
+}
+
+.navtoggle:focus:not(:focus-visible){
+    outline:none;
+}
+
+/***************************************Mini NAV*************************************/
+
+.mini-nav{
+    display: flex;
+    padding-top:85px;
+
+}
+.mini{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.nav2 {
+    display: flex;
+    list-style: none;
+} 
+
+.nav-mini-item{
+    font-size: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 80px;
+    margin: 0 20px;
+    font-family:  'Inter', sans-serif;
+    width: max-content;
+}
+
+.nav-mini-link{
+    color: #191818;
+    text-decoration: none;
+}
+.nav2 li a:hover{
+    color: #FFB602;
+}
+.nav2 li:hover{
+    transform: scale(1.1);
+}
+
+/***************************************************************************************************/
+.info{
+    min-height: 100hv;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.info-container{
+    max-width: 1120px;
+    width: 100%;
+    height: 100px;
+    padding: 40px 0;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.info .info-container .info-row {
+    width: 500px;
+    float: left;
+}
+.info .info-container .info-head{
+    width: 500px;
+    float: left;
+}
+.info .info-container .info-head .heading{
+    font-size: 25px;
+    padding: 0 100px;
+    font-weight: 100;
+}
+
+.info .info-row .content p{
+    font-size: 11px;
+    padding: 0 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+/***************************************************************************************************/
+.proyect{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family:  'Inter', sans-serif;
+}
+.proyect-container{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+
+}
+.proyectos{
+    background-image: url(../img/slide2.jpg);
+    background-size: cover;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    margin: 5px 5px;
+    border-radius: 10px; 
+    
+}
+#p2{
+    background-image: url(../img/slide1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+}
+.proyect .proyect-container .proyectos .proyec{
+    padding-left: 20px;
+}
+
+.proyect .proyect-container .proyectos .proyec .proy{
+    background-color: #FFFFFF;
+    width: 600px;
+    height: 350px;
+    text-align: justify;
+    border-radius: 10px; 
+    padding: 10px 10px;  
+
+        /*opacity: 0;
+        transform: scale(0.9);
+        transition: .7s ease-in-out all;*/
+        /*.proyect .proyect-container .proyectos .proyec .proy .visible{
+        opacity: 1;
+        transform: scale(1);
+    }*/
+}
+
+.proyect .proyect-container .proyectos .proyec .proy h1{
+    text-align: center;
+    margin: 20px 0;
+}
+.proyect .proyect-container .proyectos .proyec .proy .proy-p{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+.proyect .proyect-container .proyectos .proyec .proy p{
+    width: 500px;
+    margin: 20px 0;
+}
+
+/*--------------------------------------------------footer-------------------------------------------------------------*/
+
+
+.footer-1{
+    width: 100%;
+    background-color: #FFB602;
+    
+}
+
+
+.footer-1 .g1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: auto;
+    padding: 25px 0px;
+}
+
+.footer-1 .g1 .box{
+    justify-content: center;
+    
+}
+.footer-1 .g1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-1 .g1 .box figure img{
+    width: 150px;
+}
+
+.footer-1 .g1 .box h2{
+    color: #5B1E6E;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer-1 .g1 .box p{
+    margin-bottom: 10px;
+
+}    
+
+.footer-1 .g1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #5B1E6E;
+    margin-right: 10px;
+    background-color: #fac849;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer-1 .g1 .red-social a:hover{
+    color: aqua;
+}
+
+.footer-2{
+    background-color: #191818;
+    margin: auto;
+    text-align: center;
+    color: #EDEDED;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------Modificando el css para dispositivos Móviles-------------------------------------------*/
+@media screen and (max-width:800px){
+    .footer-1 .g1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        padding: 25px 0px;
+    }
+}
+@media (max-width: 768px){
+                .header{
+                    height: 65px;
+                }
+                .header .logo img{
+                    height: 50px;
+                    width: auto;
+                    padding: 0 20px;
+                }
+                .nav-menu{
+                    flex-direction: column;
+                    align-items: center;
+                    margin-right: 20px ;
+                    position: fixed;
+                    background-color: #656464;
+                    left: 0;
+                    top: 60px;
+                    width: 100%;
+                    padding: 20px 0;
+                    height: calc(100% - 100px);
+                    overflow-y: auto;
+
+                    left: 100%;
+                    transition: left 0.3s;
+                }  
+
+                .nav-menu-item{
+                    line-height: 50px;    
+                }
+
+                .nav-toggle {
+                    
+                    display: block;
+                }
+
+                .nav-menu_visible{
+                left: 0;
+                }
+                .home .home-slider .slide{
+                    
+                    padding-top: 1rem;
+                    
+                }
+/***********************************************************/
+                .mini{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .mini-nav{     
+                    padding-top:65px;
+                    padding-bottom: 1;
+
+                }
+                .nav-mini-item{
+                    font-size: 18px;
+                }
+
+/***********************************************************************/
+                .info{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    justify-items: center;
+                    align-items: center;
+                }
+                .info-container{
+                    height: 250px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 0;
+
+                }
+                .info .info-container .info-head .heading{
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+                .info .info-row .content p{
+                    font-size: 12px;
+                    padding: 0 50px;
+                }
+/*************************************************************************************/
+                .proyect{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    justify-items: center;
+                    align-items: center;
+                }
+                .proyect-container{
+                    width: 100%;
+                }
+                .proyect .proyect-container .proyectos {
+                    display: flex;
+                    justify-content: center;
+                    justify-items: center;
+                    align-items: center;
+                }
+                
+                #p1, #p2{
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                }
+                .proyect .proyect-container .proyectos .proyec{
+                    padding-left: 0;
+                    
+                }
+                .proyect .proyect-container .proyectos .proyec .proy{
+                    width: 300px;
+                    height: 300px;
+                    padding: 10px 10px;  
+                }
+                .proyect .proyect-container .proyectos .proyec .proy p{
+                    font-size: 12px;
+                    padding: 0 25px;
+                }
+
+                .proyect .proyect-container .proyectos .proyec .proy h1{
+                    text-align: center;
+                    margin: 20px 0;
+                }
+}

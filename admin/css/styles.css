@@ -1,0 +1,193 @@
+:root{
+    --primary: #111b54;
+    --light: #ffffff;
+    --grey: #efefef;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecera{
+    display: block;
+}
+
+body{
+    font-family: 'Mulish',sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+.select-menu{
+    background-color:  #FFB602;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.btn-add{
+    display: block;
+    background-color: #FFB602;
+    color: #111b54;
+    border: 0;
+    
+    letter-spacing: .1rem;
+}
+.btn-add:hover{
+    background: #030303;
+    color: #FFB602;
+}
+
+#sidebar-container{
+    min-height: 100vh;
+    min-width: 200px;
+}
+
+#sidebar-container .logo{
+    padding: .875rem 1.25rem;
+}
+
+#sidebar-container .menu{
+    width: 100%;
+}
+
+.w-100{
+    background-color: #e1dbe4;
+    height: 100vh;
+    align-items: flex-end;
+}
+
+.sub-menu{
+    padding: 1rem 1.5rem;
+    height: 75px;
+    background-color: #8b8b8b;
+}
+
+#content{
+    overflow-y: auto;
+    height:100vh;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.tablero{
+    width: 90%;
+    padding: 3.5rem 7.5rem;
+    align-items: center;
+}
+
+
+/*------------------ CSS-GRID ---------------------*/
+.grid-layout{
+    display: grid;
+    grid-template-columns:  18% auto;
+    grid-template-rows: auto;
+    width: 100%;
+    height:max-content;
+    margin: 0 auto;
+
+    justify-content: stretch;
+}
+
+
+.cajanav{
+    grid-column: 1/3;
+    height: 6vh;
+    background-color:  #FFB602;
+}
+
+.ccont{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    background-color: #cfdeec;
+    border: 1px #030303;
+    width: 100%;
+}
+
+.navbar{
+    padding: 10px !important;
+    background-color: #FFB602 !important;
+}
+
+.logonegro{
+    position: absolute;
+    height: 80px;
+}
+
+.c1{
+    justify-items: auto;
+    width: 100%;
+    height:auto;
+    background-color: #273baf;
+    padding: 0;
+    position: inherit;
+}
+
+
+
+
+.submenu{
+    padding: 0 auto;
+    width: 100%;
+    height: 60px; 
+    font-size: bold;
+    background-color: #363636;
+    padding-left: 30px;
+}
+
+.navsub{
+    font-size: 20px;
+    letter-spacing: .1rem;
+}
+.navsub .nav-link{
+    color: #ffffff;
+}
+.navsub .nav-link:hover{
+    color: #a8a6a6;
+}
+
+.navsub .active1{
+    color: #FFB602 !important;
+}
+
+
+.c2{
+    position: relative;
+    padding-top: 10px !important;
+    justify-items: center;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+}
+
+.tablero{
+    padding-top: 70px;
+    padding-left: 200px;
+}
+
+.imgnewelement{
+    height: 60px;
+}
+
+.herramientas{
+    padding-top: 25px;
+}
+
+.btnh{
+    height: 60px;
+    width: 60px;
+}
+
+.divisor{
+    width: 100%;
+    height: 2px;
+    background-color: #03030321;
+}

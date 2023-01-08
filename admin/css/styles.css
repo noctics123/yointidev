@@ -1,5 +1,5 @@
 :root{
-    --primary: #111b54;
+    --primary: #131313;
     --light: #ffffff;
     --grey: #efefef;
 }
@@ -35,14 +35,14 @@ a:hover{
 .btn-add{
     display: block;
     background-color: #FFB602;
-    color: #111b54;
+    color: #131313;
     border: 0;
-    
+    bold!important; /********************** poner negritta**************/
     letter-spacing: .1rem;
 }
 .btn-add:hover{
-    background: #030303;
-    color: #FFB602;
+    background: #131313;
+    color:#fffefa;
 }
 
 #sidebar-container{

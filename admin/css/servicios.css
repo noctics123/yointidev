@@ -1,0 +1,30 @@
+/*** -------------- SERVICIOS --------------***/
+.menuservicios{
+    padding-left: 0px !important;
+    width: 100%;
+}
+
+.tableinfo{
+    background-color: rgb(173, 173, 173);
+    font-size: 12px;
+}
+
+.seccbtn{
+    padding-top: 50px;
+}
+
+.tableinfo .btnedit{
+    border: none;
+    background-color:#FFB602 ;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.tableinfo .btnedit:hover{
+    background-color:#2b76e6 ;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+

@@ -37,7 +37,7 @@ a:hover{
     background-color: #FFB602;
     color: #131313;
     border: 0;
-    bold!important; /********************** poner negritta**************/
+    /**bold!important; /********************** poner negritta**************/
     letter-spacing: .1rem;
 }
 .btn-add:hover{
@@ -190,4 +190,45 @@ a:hover{
     width: 100%;
     height: 2px;
     background-color: #03030321;
+}
+
+/*** -------------- SERVICIOS --------------***/
+.menuservicios{
+    padding-left: 0px !important;
+    width: 100%;
+}
+
+.tableinfo{
+    background-color: rgb(173, 173, 173);
+    font-size: 12px;
+}
+
+.seccbtn{
+    padding-top: 50px;
+}
+
+.tableinfo .btnedit{
+    border: none;
+    background-color:#FFB602 ;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.tableinfo .btnedit:hover{
+    background-color:#2b76e6 ;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+/*** equipo***/
+.microtable{
+    background-color: #00000011;
+    font-size: 12px;
+    height: 60px;
+}
+
+.microfila{
+    padding: 4px !important;
 }

@@ -1,7 +1,6 @@
 <?php
-  require './includes/funciones.php';
+  require 'includes/funciones.php';
   incluirTemplate('header', $inicio = true);
-  
 ?>
 <!------------------------  SLIDE-HOME  --------------------->
 <section class="home" id="home">

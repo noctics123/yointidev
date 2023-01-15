@@ -1,9 +1,9 @@
 <?php
-    require './includes/funciones.php';
+    require '../includes/funciones.php';
     incluirTemplate('header');
 ?>
 <head>
-    <link rel='stylesheet' href='./css/contacto.css'>
+    <link rel='stylesheet' href='../css/contacto.css'>
 </head>
 
        <section>

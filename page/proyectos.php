@@ -1,9 +1,9 @@
 <?php
-require './includes/funciones.php';
+require '../includes/funciones.php';
     incluirTemplate('header');
 ?>
 <head>
-    <link rel="stylesheet" href="./css/proyectos.css">
+    <link rel="stylesheet" href="../css/proyectos.css">
 </head>
 
 
@@ -11,8 +11,8 @@ require './includes/funciones.php';
         <div class="mini">
             <ul class="nav2">
                 <li class="nav-mini-item"><a href="#" class="nav-mini-link mini-link">Tecnología</a></li>
-                <li class="nav-mini-item"><a href="./html/proyectos2.html" class="nav-mini-link mini-link">Marketing</a></li>
-                <li class="nav-mini-item"><a href="./html/proyectos3.html" class="nav-mini-link mini-link">Partner</a></li>
+                <li class="nav-mini-item"><a href="../html/proyectos2.html" class="nav-mini-link mini-link">Marketing</a></li>
+                <li class="nav-mini-item"><a href="../html/proyectos3.html" class="nav-mini-link mini-link">Partner</a></li>
             </ul>
         </div>
     </section>

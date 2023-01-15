@@ -1,6 +1,6 @@
 <?php 
     //data base connection
-    require 'includes/config/database.php';
+    require '../includes/config/database.php';
     $db = conectarDB();
     //un array vacio
     $errores = [];
@@ -134,8 +134,6 @@
                                     <?php echo $error; ?>
                                 </div>
                             <?php endforeach; ?>
-                
-
                         <br>
                         <br>
                         <br>
@@ -182,9 +180,9 @@
 
                 </div>
                 
-                <img src="./login/img/About-Us.png" alt="" class="image">
+                <img src="../login/img/About-Us.png" alt="" class="image">
                 <br>
-                <img src="./login/img/yinegro.png" alt="" class="logo">
+                <img src="../login/img/yinegro.png" alt="" class="logo">
 
             </div>
         </div>

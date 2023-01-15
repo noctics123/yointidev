@@ -32,17 +32,17 @@
         </button>
         <ul class="nav-menu ">
           <li class="nav-menu-item"><a href="/yointidev-main/index.php" class="nav-menu-link nav-link">Inicio</a></li>
-          <li class="nav-menu-item"><a href="/yointidev-main/servicios.php" class="nav-menu-link nav-link">Servicios</a></li>
-          <li class="nav-menu-item"><a href="/yointidev-main/proyectos.php" class="nav-menu-link nav-link">Proyectos</a></li>
-          <li class="nav-menu-item"><a href="/yointidev-main/nosotros.php" class="nav-menu-link nav-link">Nosotros</a></li>
-          <li class="nav-menu-item"><a href="/yointidev-main/html/blog.html" class="nav-menu-link nav-link">Blog</a></li>
-          <li class="nav-menu-item"><a href="/yointidev-main/contacto.php" class="nav-menu-link nav-link">Contacto</a></li>
+          <li class="nav-menu-item"><a href="/yointidev-main/page/servicios.php" class="nav-menu-link nav-link">Servicios</a></li>
+          <li class="nav-menu-item"><a href="/yointidev-main/page/proyectos.php" class="nav-menu-link nav-link">Proyectos</a></li>
+          <li class="nav-menu-item"><a href="/yointidev-main/page/nosotros.php" class="nav-menu-link nav-link">Nosotros</a></li>
+          <li class="nav-menu-item"><a href="/yointidev-main/page/html/blog.html" class="nav-menu-link nav-link">Blog</a></li>
+          <li class="nav-menu-item"><a href="/yointidev-main/page/contacto.php" class="nav-menu-link nav-link">Contacto</a></li>
           <?php if(!$auth): ?>
-            <li class="nav-menu-item"><a href="/yointidev-main/login.php" class="nav-menu-link nav-link">login</a></li>
+            <li class="nav-menu-item"><a href="/yointidev-main/page/login.php" class="nav-menu-link nav-link">login</a></li>
           <?php endif; ?>
 
           <?php if($auth): ?>
-             <a class="nav-menu-item" href="/yointidev-main/cerrar-sesion.php">Cerrrar Sesion</a>
+             <a class="nav-menu-item" href="/yointidev-main/procesos/cerrar-sesion.php">Cerrrar Sesion</a>
          <?php endif; ?>
         </ul>
     </nav>

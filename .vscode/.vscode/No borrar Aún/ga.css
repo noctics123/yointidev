@@ -1,0 +1,225 @@
+.review{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+    background-color: gray;
+    overflow: hidden;
+}
+.review .slide{
+    padding:2rem;
+    box-shadow:var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    
+}
+
+.review .slide .user{
+    display: flex;
+    gap:1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+   /* padding: 45px 20px;
+    margin: 0 40px;
+    overflow: hidden;*/
+}
+
+.review .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review .swiper-wrapper{
+    width: 100%;
+    max-width: 1200px;
+
+}
+.review .slide .user h3{
+    color:var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.review .slide .user i{
+    font-size: 1.3rem;
+    color:var(--green);
+}
+
+.review .slide p{
+    font-size: 1rem;
+    line-height: 1.8;
+    color:var(--light-color);
+}
+
+.heading-review{
+    text-align: center;
+    color: #191818;
+    font-size: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+.sub-heading-review{
+    text-align: center;
+    color:#030303;
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/*---------------------------SLIDE--------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+/*.container-slider{
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    margin: auto;
+    background-color: #FFB602;
+    
+   
+    
+}
+
+.container-slider ul {
+    display: flex;
+    animation: cambio 16s infinite alternate ease-in-out;
+    width: 400%;
+    padding: 0;
+}
+
+.container-slider li{
+   width: 100%;
+   list-style: none;
+}
+
+.container-slider h1{
+    position: absolute;
+    color: red;
+    top: 50%;
+    left: 10%;
+}
+
+.container-slider img{
+    width: 100%;
+    height: 65%;
+    padding-top: 85px;
+}
+/*.slider-section{
+    position: relative;
+    list-style:none;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+}
+.container-slider input[type="radio"]{
+    /*position: relative;
+    z-index: 50;
+    margin: 10px;
+    align-items: flex-end;
+}*/
+/*@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+}
+
+
+.container-slider .menu-slider {
+   
+    display: inline-block;
+
+}
+.container-slider .menu-slider li{
+    
+    display:inline-block;
+    text-align: center;
+    
+}
+.container-slider .menu-slider li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    padding-top: 20px;
+    
+}*/
+
+
+/*****************************************************************************************************************************************/
+
+
+
+
+/*.review{
+    min-height: 100hv;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+    background-color: gray;
+}
+.slide-content{
+    padding: 45px 20px;
+    margin: 0 40px;
+    overflow: hidden;
+}
+.reviews{
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    border: solid 1px #181818;
+}
+.image-content,
+.reviews-content{
+    display: flex;
+    padding: 10px 14px;
+    align-items: center;
+    flex-direction: column;
+}
+.reviews-image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 3px;
+}
+.reviews-image .reviews-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+}
+.cargo{
+    font-size: 16px;
+}
+.description{
+    font-size: 14px;
+    text-align: center;
+}*/

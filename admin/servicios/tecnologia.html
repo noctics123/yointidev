@@ -31,6 +31,8 @@
                 <!-- Logo Navbar-->
                 <img class="logonegro" src="../../img/logoblack.png" alt="">
 
+                <div class="titulocentral"><h5>Agencia de servicios digitales</h5></div>
+
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
 
@@ -131,18 +133,20 @@
                             </table>
                           </div>
 
-                          <div class="col-lg-3 ">
+                          <div class="col-lg-2 ">
                             <button type="button" class="btn btn-primary btn-lg btn-add">
                               <div>
                               <i class="fa-solid fa-file-circle-plus imgnewelement"></i> </div>
-                              <div>Nuevo Servicio </div>
+                              <div>New Servicio </div>
                             </button>
                           </div>
                           
-                          <div class="herramientas col-lg-3">
-                            <button type="button" class="btn btn-primary btn-lg btnh"><i class="fa-solid fa-trash-can"></i></button>
-                            <button type="button" class="btn btn-primary btn-lg btnh"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button type="button" class="btn btn-primary btn-lg btnh"><i class="fa-solid fa-floppy-disk"></i></button>
+                          <div class="col-lg-2 ">
+                            <button type="button" class="btn btn-primary btn-lg btn-save">
+                              <div>
+                                <i class="fa-solid fa-desktop imgnewelement"></i> </div>
+                              <div>Guardar</div>
+                            </button>
                           </div>
                       </div>
                   </div>
@@ -161,7 +165,7 @@
                         <th scope="col">Título</th>
                         <th scope="col">Descripción </th>
                         <th scope="col">Fondo</th>
-                        <th scope="col">Selección</th>
+                        <th scope="col">Herramientas</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -170,21 +174,36 @@
                         <td>Servicio de tec de informacion y mantenimiento</td>
                         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
                         <td>Otto</td>
-                        <td> <button> X</button></td>
+                        <td>
+                          <div class="herramientas">
+                            <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                            <button type="button" class="btn btn-primary btnh-editar"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
                         <td>Servicio de tec de informacion y mantenimiento</td>
                         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.o</td>
                         <td>Thornton</td>
-                        <td><button> X</button></td>
+                        <td>
+                          <div class="herramientas">
+                            <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                            <button type="button" class="btn btn-primary btnh-editar"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
                         <td>Servicio de tec de informacion y mantenimiento</td>
                         <td>asfdLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.o</td>
                         <td>the Bird</td>
-                        <td><button> X</button></td>
+                        <td>
+                          <div class="herramientas">
+                            <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                            <button type="button" class="btn btn-primary btnh-editar"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                          </div>
+                        </td>
                       </tr>
                     </tbody>
                   </table>

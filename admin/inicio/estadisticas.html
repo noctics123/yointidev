@@ -31,6 +31,8 @@
                 <!-- Logo Navbar-->
                 <img class="logonegro" src="../../img/logoblack.png" alt="">
 
+                <div class="titulocentral"><h5>Agencia de servicios digitales</h5></div>
+
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
 
@@ -116,14 +118,12 @@
                   <div class="container">
                       <div class="row">
                           <!-- Herramientas -->
-                          <div class="col-lg-4 ">
-                          </div>
-                          <div class="col-lg-4 ">
-                          </div>
-                          <div class="herramientas col-lg-4">
-                            <button type="button" class="btn btn-primary btn-lg btnh"><i class="fa-solid fa-trash-can"></i></button>
-                            <button type="button" class="btn btn-primary btn-lg btnh"><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button type="button" class="btn btn-primary btn-lg btnh"><i class="fa-solid fa-floppy-disk"></i></button>
+                          <div class="col-lg-2 ">
+                            <button type="button" class="btn btn-primary btn-lg btn-save">
+                              <div>
+                                <i class="fa-solid fa-desktop imgnewelement"></i> </div>
+                              <div>Guardar</div>
+                            </button>
                           </div>
                       </div>
                   </div>
@@ -141,7 +141,7 @@
                         <th scope="col">ID</th>
                         <th scope="col">Título</th>
                         <th scope="col">Estadística </th>
-                        <th scope="col">Seleccion</th>
+                        <th scope="col">Herramientas</th>
                       </tr>
                     </thead>
                     
@@ -149,21 +149,36 @@
                       <tr>
                         <th scope="row">1</th>
                         <td>Clientes satisfechos con nuestro servicio digital</td>
-                        <td>337</td>
-                        <td> <button> X</button></td>
+                        <th>337</th>
+                        <td>
+                          <div class="herramientas">
+                            <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                            <button type="button" class="btn btn-primary btnh"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
                         <td>Nuevos
                           Clientes este año</td>
-                        <td>40</td>
-                        <td><button> X</button></td>
+                        <th>40</th>
+                        <td>
+                          <div class="herramientas">
+                            <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                            <button type="button" class="btn btn-primary btnh"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                          </div>
+                        </td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
                         <td>De incremento de facturación anual</td>
-                        <td>27%</td>
-                        <td><button> X</button></td>
+                        <th>27%</th>
+                        <td>
+                          <div class="herramientas">
+                            <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                            <button type="button" class="btn btn-primary btnh"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                          </div>
+                        </td>
                       </tr>
                     </tbody>
                   </table>

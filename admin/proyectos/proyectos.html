@@ -30,8 +30,9 @@
               <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
                 <!-- Logo Navbar-->
                 <img class="logonegro" src="../../img/logoblack.png" alt="">
-
+                
                 <div class="titulocentral"><h5>Agencia de servicios digitales</h5></div>
+                
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
@@ -70,10 +71,10 @@
                 </div>
         
                 <div class="menu">
-                  <a href="./slides.html" class="d-block text-light p-3 select-menu"><i class="fa-solid fa-house-chimney  mr-2"></i></i>Inicio</a>
+                  <a href="../inicio/slides.html" class="d-block text-light p-3"><i class="fa-solid fa-house-chimney  mr-2"></i></i>Inicio</a>
                   <a href="../nosotros/informacion.html" class="d-block text-light p-3"><i class="fa-solid fa-users mr-2"></i>Nosotros</a>
                   <a href="../servicios/tecnologia.html" class="d-block text-light p-3"><i class="fa-solid fa-laptop-code mr-2"></i>Servicios</a>
-                  <a href="../proyectos/proyectos.html" class="d-block text-light p-3"><i class="fa-solid fa-folder-open mr-2"></i>Proyectos</a>
+                  <a href="./proyectos.html" class="d-block text-light p-3  select-menu"><i class="fa-solid fa-folder-open mr-2"></i>Proyectos</a>
                   <a href="../blog/publicaciones.html" class="d-block text-light p-3"><i class="fa-regular fa-id-card mr-2"></i></i>Blog</a>
                   <a href="../admins/administradores.html" class="d-block text-light p-3"><i class="fa-solid fa-user-tie mr-2"></i>Admins</a>
                 </div>
@@ -91,19 +92,7 @@
                 <div class="collapse navbar-collapse submenu" id="navbarNav">
                   <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link " href="./slides.html">Slides </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="./proyectos.html">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link   active1" href="./conocenos.html">Conocenos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./estadisticas.html">Estadísticas</a>
+                        <a class="nav-link active1" href="./proyectos.html">Nuestros Proyectos</a>
                     </li>
                   </ul>
                 </div>
@@ -114,10 +103,39 @@
           <div class="c2">
             <div id="content" class="opciones-menu">
 
-              <section>
+              <section class="menuservicios">
                   <div class="container">
-                      <div class="row">
+                      <div class="row ">
                           <!-- Herramientas -->
+                          <div class="col-lg-6 ">
+                            <table class="table tableinfo">
+                              <tbody>
+                                <tr>
+                                  <th scope="col">Nuestros Proyectos</th>
+                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. 
+                                    Felis eget nunc lobortis mattis aliquam faucibus purus in massa. 
+                                    A diam sollicitudin tempor id eu nisl nunc mi.
+                                  </td>
+                                  <td class="seccbtn">
+                                    <button type="button" class="btn btn-primary btn-lg btnedit">
+                                      <i class="fa-solid fa-pen"></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="col-lg-2 ">
+                            <button type="button" class="btn btn-primary btn-lg btn-add">
+                              <div>
+                              <i class="fa-solid fa-file-circle-plus imgnewelement"></i> </div>
+                              <div>New Proyect </div>
+                            </button>
+                          </div>
+                          
                           <div class="col-lg-2 ">
                             <button type="button" class="btn btn-primary btn-lg btn-save">
                               <div>
@@ -138,24 +156,87 @@
                   <table class="table">
                     <thead class="thead-dark">
                       <tr>
+                        <th scope="col">ID</th>
                         <th scope="col">Título</th>
-                        <th scope="col">Subtitulo </th>
-                        <th scope="col">Descripción</th>
+                        <th scope="col">Descripción </th>
+                        <th scope="col">Fotos</th>
                         <th scope="col">Herramientas</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">Conocenos</th>
-                        <th scope="row">¿Quienes somos?</th>
-                        <td scope="row">Somos una compañía constituida con total vocación innovadora, cuyo propósito es ser tu socio tecnológico, proporcionándote soluciones adaptadas a tus necesidades reales.
-                          Para lograr los objetivos planteados usamos, facilitamos y desarrollamos preferencialmente productos tecnologías disruptivas.
-                          Nos especializamos en el mundo digital para transformar tu negocio en todos los aspectos, potenciando tus servicios y la experiencia de tus clientes.
-                          Permitenos ser parte de tu futuro digital...
+                        <th scope="row">1</th>
+                        <td>Servicio de tec de informacion y mantenimiento</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                        <td><table class="table microtable">
+                          <tbody>
+                            <tr>
+                              <td class="microfila">/gallery/thepicture1.png</td>
+                            </tr>
+                            <tr>
+                              <td class="microfila">/gallery/thepicture1.png</td>
+                            </tr>
+                            <tr>
+                              <td class="microfila">/gallery/thepicture1.png</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                        <td>
+                          <div class="herramientas">
+                            <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                            <button type="button" class="btn btn-primary btnh-editar"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Servicio de tec de informacion y mantenimiento</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.o</td>
+                        <td>
+                          <table class="table microtable">
+                            <tbody>
+                              <tr>
+                                <td class="microfila">/gallery/thepicture1.png</td>
+                              </tr>
+                              <tr>
+                                <td class="microfila">/gallery/thepicture1.png</td>
+                              </tr>
+                              <tr>
+                                <td class="microfila">/gallery/thepicture1.png</td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </td>
                         <td>
                           <div class="herramientas">
-                            <br>
+                            <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
+                            <button type="button" class="btn btn-primary btnh-editar"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Servicio de tec de informacion y mantenimiento</td>
+                        <td>asfdLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.o</td>
+                        <td>
+                          <table class="table microtable">
+                            <tbody>
+                              <tr>
+                                <td class="microfila">/gallery/thepicture1.png</td>
+                              </tr>
+                              <tr>
+                                <td class="microfila">/gallery/thepicture1.png</td>
+                              </tr>
+                              <tr>
+                                <td class="microfila">/gallery/thepicture1.png</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td>
+                          <div class="herramientas">
+                            <button type="button" class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
                             <button type="button" class="btn btn-primary btnh-editar"><i class="fa-solid fa-pen-to-square hrr" width="10px"></i></button>
                           </div>
                         </td>

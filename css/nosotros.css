@@ -54,14 +54,14 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 230px; 
+    height: 200px; 
     margin-top: 85px;
 }
 
 .tittle{
     color: azure;
     text-align: center;
-    padding-top: 1.1em;
+    padding-top: .8em;
     font-size: 70px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
     ;
@@ -81,10 +81,9 @@ body{
 
 /****************** CARACTERISTICAS *************************/
 .features{
-    width: 100%;
-    height: 300px;
+    width: auto;
+    height: 220px;
     background: #FFB602; 
-    min-height: 100hv;
     display: flex;   
     justify-content: center;
     justify-items: center;
@@ -115,13 +114,13 @@ body{
 .container-cuadro .cuadro svg{
     align-items: center;
     width: 170px;
-    height: 130px;
+    height: 90px;
 }
 
 .features .container-cuadro .cuadro p{
-    margin-top: 1rem;
+    margin-top: .5rem;
     padding: 0 2rem 0 3rem;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     font-family:  sans-serif;
 }
@@ -164,7 +163,7 @@ body{
 .letrasmv{
     text-align: center;
     font-size: 3em;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .letrasmv span {
@@ -175,10 +174,10 @@ body{
     position: relative;
     width: 250px;
     height: 250px;
-    margin: 20px;
+    margin: 0px 60px;
     border-radius: 25px;
-    transition: 0.5s;
-    transition-delay: 0.5s;
+    transition: .15s;
+    transition-delay: 0.15s;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -211,7 +210,7 @@ body{
     height: 100%;
     background: var(--clr);
     clip-path: circle(120px at center);
-    transition: 0.5s;
+    transition: .9s;
 }
 
 .cardmv:hover .circle::before{
@@ -221,8 +220,8 @@ body{
 .cardmv .circle .eye{
     position: relative;
     width: 180px;
-    transition: 0.5s;
-    transition-delay: 0.5s;
+    transition: .5s;
+    transition-delay:  0.5s;
 }
 
 .cardmv:hover .circle .eye{
@@ -314,6 +313,7 @@ body{
     .cardmv{
         width: auto;
         max-width: 300px;
+        margin: 0px;
         align-items: flex-start;
     }
     .cardmv:hover{
@@ -336,13 +336,10 @@ body{
 }
 
 /************************* GALLERY *************************/
-.img-gallery{
-    margin-top: 235px;
-    width: 80%;
-    margin: 50px auto 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 10px;
+.gal{
+    background-color: #0000001a;
+    margin-bottom: 0px;
+    width: 100%;
 }
 
 .img-gallery img{
@@ -380,9 +377,26 @@ body{
 
 .ful-img img{
     width: 90%;
-    max-width: 600px;
+    max-width: 100px;
 }
 
+.carousel__contenedor{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.crop-img{
+    height: 100%;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.large-img{
+    padding-top: 0px;
+    height: 470px;
+    max-width:500%;
+    margin-top: 10px;
+}
 
 
 

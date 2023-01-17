@@ -336,11 +336,7 @@ body{
 }
 
 /************************* GALLERY *************************/
-.gal{
-    background-color: #0000001a;
-    margin-bottom: 0px;
-    width: 100%;
-}
+
 
 .img-gallery img{
     width:100%;
@@ -348,37 +344,6 @@ body{
     transition: 1s;
 }
 
-.img-gallery img:hover{
-    transform: scale(1.3);
-}
-
-.ful-img{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 99;
-}
-
-
-.ful-img span{
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    font-size: 40px;
-    color: #FFB602;
-   cursor: pointer;
-}
-
-.ful-img img{
-    width: 90%;
-    max-width: 100px;
-}
 
 .carousel__contenedor{
     width: 100%;
@@ -387,7 +352,7 @@ body{
 }
 .crop-img{
     height: 100%;
-    width: 200px;
+    width: 190%;
     margin-bottom: 10px;
 }
 

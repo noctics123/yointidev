@@ -5,7 +5,7 @@ require '../includes/funciones.php';
 <head>
     <link rel='stylesheet' href='../css/nosotros.css'>
 </head>
-<!-- <body>
+<!-- <body> -->
     <!-- HEADER -->
     <header class="header">
         <nav class="nav">

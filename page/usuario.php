@@ -1,12 +1,12 @@
 <?php
 
 //Importar la conexion
-require 'includes/config/database.php';
+require '../includes/config/database.php';
 $db = conectarDB();
 
 //Crear un email y password
-$email = "cerio1@gmail.com";
-$password = 1234568;
+$email = "antonio@gmail.com";
+$password = "1234";
 
 $passwordHash = password_hash($password,PASSWORD_DEFAULT);
 

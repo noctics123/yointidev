@@ -6,6 +6,7 @@
     $errores = [];
     //Autenticando usuario
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
+
         $user = mysqli_real_escape_string($db,$_POST['user']);
         $password = mysqli_real_escape_string($db, $_POST['password']);
         if(!$user){
@@ -54,7 +55,7 @@
                     $_SESSION['user'] = $usuario['username'];
                     $_SESSION['login'] = true;
 
-                    header('Location: /yointidev-main/admin/inicio/slides.php');
+                    header('Location: /yointidev-main/admin2/inicio/slides.php');
                 }else{
                     $errores[] = "<script>
                     Swal.fire({

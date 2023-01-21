@@ -306,9 +306,8 @@ body{
     }
 }
 
-
 /********************Styles to create Slides.php*************************/
-
+/* 
 textarea {
     width: 300px;
     height: 80px;
@@ -320,5 +319,5 @@ textarea {
  }
  .image {
   width: 400px;
- }
+ } */
 

@@ -442,3 +442,57 @@ nav{
                     margin: 20px 0;
                 }
 }
+
+/*------------------ CSS-GRID ---------------------*/
+.grid-layout1{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: 0 auto;
+
+    background-color: rgba(8, 8, 8, 0.377);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.caja1{
+    width: 680px;
+    height: 540px;
+    background-image: url(../img/fondoyointinegro.png);
+    margin: 30px;
+    text-align: center;
+    float: left;
+}
+
+.caja2{
+    width: 530px;
+    height: 540px;
+    border: #5B1E6E 2px solid;
+    background-color: aquamarine;
+    margin: 30px;
+    text-align: center;
+    float: left;
+
+    justify-content: center;
+}
+
+.imgproy{
+    height: 540px;
+    width: 680;
+}
+
+
+.tituloproy{
+    width: 100%;
+    background-color: #FFB602;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.textproy{
+    background-color: cornflowerblue;
+    padding: 50px;
+}

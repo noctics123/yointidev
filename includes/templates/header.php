@@ -18,14 +18,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/yointidev-main/css/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <script defer src="index.js"></script>
+    <script defer src="index.js"></script> 
 </head>
 <body>
    
    <header class="header <?php echo $inicio ? 'inicio' : ''; ?>">
     <nav class="nav">
         <div class="logo">
-            <img src="/yointidev-main/img/yiamarillo.png" alt="Logo de YoInti">
+            <a href="/yointidev-main/">
+             <img src="/yointidev-main/img/yiamarillo.png" alt="Logo de YoInti">
+            </a>
+            
         </div>
         <button class="nav-toggle" aria-label="Abrir menú">
             <i class="fas fa-bars"></i>
@@ -37,6 +40,7 @@
           <li class="nav-menu-item"><a href="/yointidev-main/page/nosotros.php" class="nav-menu-link nav-link">Nosotros</a></li>
           <li class="nav-menu-item"><a href="/yointidev-main/page/html/blog.html" class="nav-menu-link nav-link">Blog</a></li>
           <li class="nav-menu-item"><a href="/yointidev-main/page/contacto.php" class="nav-menu-link nav-link">Contacto</a></li>
+          
           <?php if(!$auth): ?>
             <li class="nav-menu-item"><a href="/yointidev-main/page/login.php" class="nav-menu-link nav-link">login</a></li>
           <?php endif; ?>

@@ -3,7 +3,7 @@
 
 
     //para validar
-    $id = $_GET['id'];
+    $id = $_GET['id2'];
     $id = filter_var($id, FILTER_VALIDATE_INT);
     if(!$id){
       header("Location: /yointidev-main/admin2/inicio/slides.php");
@@ -25,14 +25,14 @@
     $resultado = mysqli_query($db, $consulta);
     $propiedad = mysqli_fetch_assoc($resultado);
 
-
-    
+ 
 
     // Consultar para obtener los vendedores
    $consulta = "SELECT * FROM slides";
    $resultado = mysqli_query($db,$consulta); 
 
    $errores = [];
+   $id3 = $propiedad['id'];
    $titulo = $propiedad['title'];
    $subtitulo = $propiedad['sub_title'];
    $imagenSlides = $propiedad['imagen'];
@@ -112,7 +112,7 @@
       if(empty($errores)){
 
         //Crear carpeta 
-        $carpetaImagenes = '../../imagenes/' ;
+        $carpetaImagenes = '../../../imagenes/' ;
 
         if(!is_dir($carpetaImagenes)){
           mkdir($carpetaImagenes);
@@ -173,7 +173,7 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">1</th>
+                            <th scope="row"><?php echo $id3; ?></th>
                             <td>
                                 <input class="titulo" type="text" id="titulo" name="titulo" placeholder="Titulo " value="<?php echo $titulo; ?>">
                             </td>
@@ -182,7 +182,7 @@
                             </td>
                             <td>
                                 <input type="file" id="imagen" accept="image/jpeg, image/png" name="imagen">
-                                <img src="./../../imagenes/<?php echo $imagenSlides; ?>" width="100rem">
+                                <img src="./../../../imagenes/<?php echo $imagenSlides; ?>" width="100rem">
                             </td>
                             <td>
                               <div class="herramientas">

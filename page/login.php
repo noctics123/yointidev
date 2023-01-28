@@ -55,7 +55,7 @@
                     $_SESSION['user'] = $usuario['username'];
                     $_SESSION['login'] = true;
 
-                    header('Location: /yointidev-main/admin2/inicio/slides.php');
+                    header('Location: /yointidev-main/admin2/');
                 }else{
                     $errores[] = "<script>
                     Swal.fire({

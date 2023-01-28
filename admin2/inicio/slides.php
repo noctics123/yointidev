@@ -1,15 +1,8 @@
 <?php
   ob_start();
-// echo "<pre>";
-// var_dump($_POST);
-// echo "</pre>";
-
-  
 
   $Arrayresult = [];
 
-
-  
   //el template
   require '../../includes/funciones2.php';
   incluirTemplateAdmin('header');
@@ -38,7 +31,6 @@
       $query = "DELETE FROM slides where id =${id}";
       $resultado=mysqli_query($db,$query);
       if($resultado){
-        // header('/yointidev-main/admin2/inicio/slides.php?resultado=2');
         header("Location: /yointidev-main/admin2/inicio/slides.php?resultado=3");
       }
     }
@@ -113,11 +105,7 @@
                             
                           </div>
                           <div class="col-lg-4 ">
-                            <!-- <button type="button" class="btn btn-primary btn-lg btn-save">
-                              <div>
-                                <i class="fa-solid fa-desktop imgnewelement"></i> </div>
-                              <div>Guardar</div>
-                            </button> -->
+                           
                           </div>
                           <div class="herramientas col-lg-4">
                             </div>
@@ -145,17 +133,22 @@
                         <th scope="row"><?php echo $property['id']; ?></th>
                         <td><?php echo $property['title']; ?></td>
                         <td><?php echo $property['sub_title']; ?></td>
-                        <td><img src="../imagenes/<?php echo $property['imagen']; ?>" class="imagen-tabla"></td>
+                        <td><img src="../../imagenes/<?php echo $property['imagen']; ?>" class="imagen-tabla"></td>
                         <td>
+
+                        
                           <form method="post">
                             <div class="herramientas">
-                              <input type="hidden" name="id" value="<?php echo $property['id'] ?>" >
+                              <input type="hidden" name="id" value="<?php echo $property['id']; ?>" >
+                              
                               <button type="submit button"class="btn btn-primary btnh-eliminar"><i class="fa-solid fa-trash-can hrr" width="10px"></i></button>
-                              <a href="../propiedades/slides/editarSlides.php?id=<?php echo $property['id'] ?>">
+                              
+                              <a href="../propiedades/slides/editarSlides.php?id2=<?php echo $property['id'] ?>">
                                 <button type="button" class="btn btn-primary btnh">
                                   <i class="fa-solid fa-pen-to-square hrr" width="10px"></i>
                                 </button>
                             </a>
+
                             </div>
                           </form>
                         </td>

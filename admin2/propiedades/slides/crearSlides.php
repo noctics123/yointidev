@@ -9,7 +9,7 @@
     require_once '../../../includes/config/database.php';
     $db= conectarDB();
 
-    // Consultar para obtener los vendedores
+    // Consultar para obtener los slides
    $consulta = "SELECT * FROM slides";
   
    $resultado = mysqli_query($db,$consulta); 
@@ -28,7 +28,7 @@
     if(!$titulo){
       $errores[] = "<script>
         Swal.fire({
-          text:'El usuario es obligatorio o no es valido',
+          text:'El titulo es obligatorio o no es valido',
           width: 380 ,
           padding: '3em',
           color: '#ffffff',
@@ -50,7 +50,8 @@
         })
         </script>";
 
-    }else
+    }
+    //else
     //  if(strlen($subtitulo)<50){
     //   $errores[] = "<script>
     //     Swal.fire({
@@ -78,7 +79,6 @@
       })
     </script>";
       
-      
     }
 
     //validar por tamaño (1mb maximo)
@@ -98,11 +98,10 @@
     }
 
     //Revisar que el array este vacio
-
     if(empty($errores)){
 
       //Crear carpeta 
-      $carpetaImagenes = '../../imagenes/' ;
+      $carpetaImagenes = '../../../imagenes/' ;
 
       if(!is_dir($carpetaImagenes)){
         mkdir($carpetaImagenes);
@@ -118,10 +117,9 @@
       
       $resultado = mysqli_query($db,$query);
 
-        if($resultado){
-          
-          header("Location: /yointidev-main/admin2/inicio/slides.php?resultado=1");
-        }
+      if($resultado){
+        header("Location: /yointidev-main/admin2/inicio/slides.php?resultado=1");
+      }
 
     }
 
@@ -156,7 +154,7 @@
                                 <input class="titulo" type="text" id="titulo" name="titulo" placeholder="Titulo " value="<?php echo $titulo; ?>">
                             </td>
                             <td>
-                                <textarea id="subtitulo" name="subtitulo" spellcheck="false" width="300px" placeholder="Subtitulo" ><?php echo $subtitulo ?></textarea>
+                                <textarea id="subtitulo" name="subtitulo" spellcheck="false" width="300px" placeholder="Subtitulo" ><?php echo $subtitulo; ?></textarea>
                             </td>
                             <td>
                                 <input type="file" id="imagen" accept="image/jpeg, image/png" name="imagen">

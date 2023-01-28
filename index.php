@@ -1,7 +1,9 @@
 <?php
-  require 'includes/funciones.php';
+  require_once 'includes/funciones.php';
   incluirTemplate('header', $inicio = true);
 ?>
+
+
 <!------------------------  SLIDE-HOME  --------------------->
 <section class="home" id="home">
   
@@ -9,36 +11,10 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-          <div class="swiper-slide slide back1">
-              <div class="content">
-                <h3>The best way to show your project</h3>
-                <p>Here you can put a shot description about you</p><br>
-                <a href="#" class="btn1">Conocer más</a>             
-              </div>
-              
-          </div>
-          <div class="swiper-slide slide back2">
-            <div class="content">
-              <h3>The best way to show your project</h3>
-              <p>Here you can put a shot description about you</p><br>
-              <a href="#" class="btn1">Conocer más</a>             
-            </div>
-          </div>
-          <div class="swiper-slide slide back3">
-            <div class="content">
-              <h3>The best way to show your project</h3>
-              <p>Here you can put a shot description about you</p><br>
-              <a href="#" class="btn1">Conocer más</a>             
-            </div>
-          </div>
-          <div class="swiper-slide slide back4">
-            <div class="content">
-              <h3>The best way to show your project</h3>
-              <p>Here you can put a shot description about you</p><br>
-              <a href="#" class="btn1">Conocer más</a>             
-            </div>
-          </div>
-      
+          <?php
+            $limite = 5;
+            include_once 'includes/slides/slides.php';
+          ?>
     </div>
     <!-- pagination -->
     <div class="swiper-pagination"></div>
@@ -70,47 +46,10 @@
 <section class="cuadrado">
   <div class="container-cua">
      <div class="container-cuadro">
-            <div class="cuadro">
-                  <img src="./img/p1.png" alt="a">
-                <h1>Digital Marketing</h1>
-                <ol>
-                  <li>Social Media Manager</li>
-                  <li>Campañas Publicitarias</li>
-                  <li>Diseño de Identidad de Marca(Branding)</li>
-                  <li>Social Marketing (Mercadeo Social)</li>
-                </ol>
-                <a href="#" class="btn-servicios">Ver más</a>
-            </div>
-
-            <div class="cuadro">
-                <img src="./img/p2.png" alt="a">
-                <h1>Information Technology</h1>
-                <ol>
-                  <li>Desarrollo de Páginas Webs</li>
-                  <li>Desarrollo de Apps Movil</li>
-                  <li>Desarrollo de Sistemas Integrados de Gestión</li>
-                  <li>Digitalización de Documentos</li>
-                </ol>
-                <a href="#" class="btn-servicios">Ver más</a>
-            </div>
-            
-            <div class="cuadro">
-                <div class="imgc">
-                <img src="./img/p3.png" alt="a">
-                </div>
-                <h1>Digital Partner outsourcing</h1>
-                <ol>
-                  
-                  <li>Gestión de Leads (Ventas)</li>
-                  <br>
-                  <li>Equipo de diseño 24/7</li>
-                  <br>
-                  <li>Equipo InTI</li>
-                  
-                </ol>
-                <a href="#" class="btn-servicios">Ver más</a>
-            </div>
-
+          <?php
+            $limit2 = 3;
+            include_once 'includes/servicios/servicios.php';
+          ?>
       </div> 
     </div>
 </section>

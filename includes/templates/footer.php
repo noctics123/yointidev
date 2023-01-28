@@ -15,8 +15,8 @@
       <!-- box1 -->
       <div class="box">
           <figure>
-              <a href="#">
-                 <img src="/yointidev-main/login/img/yinegro.png" width="20px" alt="logo footer"> 
+              <a href="../../index.php">
+                 <img  src="/yointidev-main/login/img/yinegro.png" width="20px" alt="logo footer"> 
               </a>
           </figure>
       </div>

@@ -13,3 +13,4 @@ function estaAutenticado():bool {
         return false;
     }
 }
+

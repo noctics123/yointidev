@@ -482,30 +482,51 @@ nav{
 }
 
 /*------------------ CSS-GRID ---------------------*/
+.contenedor{
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.slider-contenedor{
+    width: 100%;
+    background-color: #ffffff00;
+    display: flex;
+}
 .grid-layout1{
     display: grid;
-    grid-template-columns: auto auto;
-    width: 80%;
-    margin: 0 auto;
 
-    background-color: rgba(8, 8, 8, 0.377);
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 15px;
+}
+
+.contenido-slider{
+    width: 100% ;
+    padding: 0px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+.contenido-slider:nth-child(2){
+    background: #ffffff00;
+}
+
+.contenido-slider:nth-child(3){
+    background: #ffffff00;
 }
 
 .caja1{
     width: 680px;
-    height: 540px;
-    background-image: url(../img/fondoyointinegro.png);
+    height: 500px;
+    background-image: url(../img/proy/fondoproy.png);
     margin: 30px;
     text-align: center;
     float: left;
 }
 
 .caja2{
-    width: 530px;
-    height: 540px;
+    width: 680px ;
     margin: 30px;
     text-align: center;
     float: left;
@@ -531,7 +552,6 @@ nav{
 }
 
 .textproy{ 
-    padding: 20px 20px 0px 20px; 
     max-height: 850px;
 }
 .textproy p{
@@ -541,10 +561,10 @@ nav{
 
 
 .btn-proy{
-    position:absolute;
+    position:relative;
     cursor: pointer;
     color:rgb(255, 255, 255);
-    background-color: #38BCD9;
+    background-color: #000000;
     border-radius: .5rem;
     margin-top: 2rem;
     margin-left: -5rem;

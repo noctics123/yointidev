@@ -101,6 +101,7 @@ body{
     --swiper-theme-color: solid #FFB602;
     --swiper-navigation-size: 25px;
     border: solid 1px #000000;
+    -webkit-text-fill-color: rgb(255, 255, 255);
 }
 @media(max-width: 768px){
     .swiper-button-next,.swiper-button-prev{
@@ -108,13 +109,14 @@ body{
     }
 }
 
+
 .swiper-button-next:hover,.swiper-button-prev:hover{
     background-color: #FFB602;
     border-radius: 100px;
     padding: 50px 20px;
     --swiper-theme-color: solid #030303;
     --swiper-navigation-size: 25px;
-    border: solid 1px #FFB602;
+    border: solid 1px #fdfdfd;
 }
 @media(max-width: 768px){
 }
@@ -1359,7 +1361,7 @@ body{
     line-height: 60px;
     text-align: center;
     border-radius: 50%;
-    box-shadow: 0px 1px 10px #5B1E6E;
+    box-shadow: 2px 2px 10px #5B1E6E;
     transition: all 500ms ease;
 }
 

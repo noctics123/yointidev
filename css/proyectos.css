@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+@import url('href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -165,7 +167,6 @@ nav{
 
 /***************************************************************************************************/
 .info{
-    min-height: 100hv;
     width: 100%;
     height: 150px;
     display: flex;
@@ -174,6 +175,17 @@ nav{
     justify-items: center;
     align-items: center;
     margin: 35px;
+}
+
+.info-proy{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0px;
 }
 .info-container{
     max-width: 80%;
@@ -193,7 +205,21 @@ nav{
     padding-left: 60px;
     text-align: justify;
 }
+
+.info-proy .info-container .info-row {
+    margin-top: 20px;
+    width: 700px;
+    float: left;
+    padding-left: 60px;
+    text-align: justify;
+}
+
 .info .info-container .info-head{
+    width: 350px;
+    float: left;
+}
+
+.info-proy .info-container .info-head{
     width: 350px;
     float: left;
 }
@@ -203,6 +229,13 @@ nav{
 }
 
 .info .info-row .content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 100px 10px 100px ;
+    line-height: 1.5;
+}
+
+.info-proy .info-row .content p{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     padding: 100px 10px 100px ;
@@ -527,102 +560,62 @@ nav{
                 }
 }
 
-/*------------------ CSS-GRID ---------------------*/
-.contenedor{
-    width: 100%;
+/*------------------ slides ---------------------*/
+.carousel-inner{
     overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-.slider-contenedor{
-    width: 100%;
-    background-color: #ffffff00;
-    display: flex;
-}
-.grid-layout1{
-    display: grid;
-
-}
-
-.contenido-slider{
-    width: 100% ;
-    padding: 0px ;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-shrink: 0;
-}
-.contenido-slider:nth-child(2){
-    background: #ffffff00;
-}
-
-.contenido-slider:nth-child(3){
-    background: #ffffff00;
 }
 
 .caja1{
-    width: 680px;
-    height: 500px;
-    background-image: url(../img/proy/fondoproy.png);
-    margin: 30px;
+    padding-top: 35px;
+    width: 600px;
+    height: 380px;
+    margin: 35px;
     text-align: center;
-    float: left;
+    justify-content: center;
+    align-items: center;
+}
+.caja1 h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.caja1 h6{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 18px;
+    line-height: 35px;
 }
 
 .caja2{
-    width: 680px ;
-    margin: 30px;
-    text-align: center;
-    float: left;
-
-    justify-content: center;
+    width: 600px;
 }
 
-.imgproy{
-    height: 540px;
-    width: 680px;
+.caja2 ul{
+    display: flex;
+    padding: 0;
+    width: 600px;
 }
 
-
-.tituloproy{
-    cursor: pointer;
+.caja2 li{
+    list-style: none;
     width: 100%;
-    background-color: #FFB602;
-    border-radius: 15px;
+}
+
+.caja2 img{
+    list-style: none;
+    width: 100%;
+}
+
+
+.carousel{
+    width: 100%;
+    background-color: #1a1a1a;
+}
+
+.contenido-slider{
+    width: 100%;
+    height: 100%;
+    background-color: #f8c74c;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 5px;
-    font-weight: bold;
-}
-
-.textproy{ 
-    max-height: 850px;
-}
-.textproy p{
-    font-size: 20px;
-    color: rgb(24, 24, 24);
-}
-
-
-.btn-proy{
-    position:relative;
-    cursor: pointer;
-    color:rgb(255, 255, 255);
-    background-color: #000000;
-    border-radius: .5rem;
-    margin-top: 2rem;
-    margin-left: -5rem;
-    text-decoration: none;
-    padding:.8rem 3rem;
-    border: solid 1px #fdfdfd;
-    font-weight: bold;
-}
-
-.btn-proy:hover{
-    background:rgb(29, 28, 28);
-    border: solid 1px #000000;
-    color:#FFB602;
-    font-weight: bold;
 }

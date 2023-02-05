@@ -254,3 +254,130 @@ body{
      background-color: #FFB602;
      border: #fafafa 1px solid;
  }
+
+
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+ 
+
+.containerart{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background-color: #1f1f1f;
+}
+
+.containerart .heading{
+    color: #FFB602;
+}
+.containerart .content{
+    color: white;
+}
+.containerart .content p{
+    font-size: 23px !important;
+}
+
+
+.containerart .cardart{
+    background-color: white;
+    width: 530px;
+    height: 495px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px 80px;
+    text-align: center;
+    transition: all 0.25s;
+
+    letter-spacing: 0.03em;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+.containerart .cardart:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.containerart .cardart img{
+    width: 530px;
+    height: 250px;
+}
+
+.infoart{
+    height: 145px;
+    display:block;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonart{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.buttonart p{
+    margin-right: 35px;
+    background-color: #5a5a5a77;
+    color: #ffffff !important;
+    border-radius: 5px; 
+}
+.buttonart a{
+    height: 30px;
+    width: 120px;
+    background-color: #FFB602;
+    color: #ffffff !important;
+    border: solid 2px #FFB602;
+    border-radius: 5px; 
+    font-weight: bolder !important;
+}
+
+.buttonart a:hover{
+    height: 30px;
+    width: 120px;
+    background-color: #FFB602;
+    color: #191818 !important;
+    border: solid 2px #0f0f0f;
+    border-radius: 5px; 
+}
+
+.containerart .cardart h4{
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    font-size: 28px;
+    color: #0fa7ee;
+}
+
+.containerart .cardart p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    
+}
+
+.containerart .cardart a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+    letter-spacing: 0.03em;
+}
+
+.lineart{
+    height: 2px;
+    background-color: #c4c4c4;
+}
+
+
+.footart{
+    display: flex;
+    height:33px;
+    width: 550px;
+    align-items: center;
+    justify-content: center;
+    color: #9b9b9b ;
+}

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -13,13 +13,13 @@ body{
 }
 
 .header{
-    background-color: #191818;
+    background-color: #141414;
     height: 85px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    padding: 5px 5%;
+    padding-left: 5%;
     z-index: 1000;
 }
 
@@ -48,6 +48,7 @@ body{
 
 .header .logo {
     cursor: pointer;
+    margin-top: 7px;
 }
 .header .logo img{
     height: 70px;
@@ -96,11 +97,12 @@ body{
 
 /*------------------------------------------*/
 .swiper-button-next,.swiper-button-prev{
+    display: flex;
     border-radius: 100px;
     padding: 50px 20px;
     --swiper-theme-color: solid #FFB602;
     --swiper-navigation-size: 25px;
-    border: solid 1px #000000;
+    border: solid 1px #cccccc41;
     -webkit-text-fill-color: rgb(255, 255, 255);
 }
 @media(max-width: 768px){
@@ -266,6 +268,15 @@ body{
         line-height: 1.2;
     }
 }
+/*------------------------- proy-----------------------------*/
+.carousel-item .carousel-caption h1{
+    color: #FFB602;
+}
+.carousel-item .carousel-caption p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 
 /*--------------------------PROYECTOS-------------------------------*/
 .swiper-pagination-bullet-active{
@@ -334,11 +345,6 @@ body{
     }
 }
 
-/*.about .about-container .head .heading{
-    font-size: 3rem;
-    font-family: 'Inter', sans-serif;
-    padding: 0 100px;
-}*/
 
 .about .row .content p{
     font-size: 15px;
@@ -347,6 +353,7 @@ body{
     text-align: justify;
     font-family: 'Inter', sans-serif;
 }
+
 /*------------------------- SERVICIOS -----------------------------*/
 .carousel-item{
     height: 500px;
@@ -1340,61 +1347,6 @@ body{
                     
     }               
 /*------------------------------------------------------------------------------------------------------------------*/
-
-#btn-mas{
-    display: none;
-}
-
-.flotante{
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-}
-
-.redes i, .fa-plus{
-    display: block;
-    text-decoration: none;
-    background: #FFB602;
-    color: white;
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 2px 2px 10px #5B1E6E;
-    transition: all 500ms ease;
-}
-
-.redes i:hover{
-    background: #36BBD8;
-    color: #FFB602;
-}
-
-.redes i{
-    margin-bottom: -15px;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#btn-mas:checked~ .redes i{
-    margin-bottom: 10px;
-    opacity: 1;
-    visibility: visible;
-}
-
-.fa-plus{
-    background: url(../img/01-screenshot.jpg);
-}
-
-
-#btn-mas:checked ~ .btn-mas .fa-plus{
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
-    text-align: center;
-    transform: rotate(137deg);
-    font-size:25px;
-}
 
 
 

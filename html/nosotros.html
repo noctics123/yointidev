@@ -24,29 +24,32 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 	<link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     
     <script defer src="../index.js"></script>
 </head>
 <body> 
     <!-- HEADER -->
-   <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <img src="../img/yiamarillo.png" alt="Logo de YoInti">
-        </div>
-        <button class="nav-toggle" aria-label="Abrir menú">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-menu ">
-          <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">Inicio</a></li>
-          <li class="nav-menu-item"><a href="./servicios.html" class="nav-menu-link nav-link">Servicios</a></li>
-          <li class="nav-menu-item"><a href="./proyectos.html" class="nav-menu-link nav-link">Proyectos</a></li>
-          <li class="nav-menu-item"><a href="./nosotros.html" class="nav-menu-link nav-link">Nosotros</a></li>
-          <li class="nav-menu-item"><a href="./blog.html" class="nav-menu-link nav-link">Blog</a></li>
-          <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
-      </ul>
-    </nav>
-   </header>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="../img/yiamarillo.png" alt="Logo de YoInti">
+            </div>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu ">
+              <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">Inicio</a></li>
+              <li class="nav-menu-item"><a href="./servicios.html" class="nav-menu-link nav-link">Servicios</a></li>
+              <li class="nav-menu-item"><a href="./proyectos.html" class="nav-menu-link nav-link">Proyectos</a></li>
+              <li class="nav-menu-item"><a href="./nosotros.html" class="nav-menu-link nav-link">Nosotros</a></li>
+              <li class="nav-menu-item"><a href="./blog.html" class="nav-menu-link nav-link">Blog</a></li>
+              <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+              <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link nav-link"><i href="./html/contacto.html" class="fas fa-user-tie"></i></a></li>
+              
+          </ul>
+        </nav>
+    </header>
        
     <!-- Titulo -->
     <div class="s-nosotros">
@@ -90,7 +93,7 @@
                 </div>
       
             </div>
-      </section>
+    </section>
 
     <!-- MISION Y VISION -->
     <h1 class="letrasmv">Visión <span> Misión</span></h1>
@@ -124,7 +127,9 @@
     <!-- GALERÍA -->
     <div class="contenedor gal">
 
-        <h1 class="letrasmv">Galería</h1>
+        <br>
+
+        <h1 class=" letrasgal">Galería</h1>
 
         <div class="carousel">
             <div class="carousel__contenedor">
@@ -171,13 +176,13 @@
         <!-- img grande-->
         <div class="row">
 			<div class="col-md-1">
-				<button id="backward" >&lt;</button>
+				<button id="backward" class="bttnimg_big"><i class="fas fa-angle-double-left"></i></button>
 			</div>
 			<div class="col-md-10">
 				<img id="bigImage" class="large-img" src="../img/2.png" alt="Rock and Roll Hall of Fame"/> 
 			</div>
 			<div class="col-md-1">
-				<button id="forward">&gt;</button>
+				<button id="forward" class="bttnimg_big"><i class="fas fa-angle-double-right"></i></button>
 			</div>
 		</div>
 
@@ -185,6 +190,59 @@
 
     <br>
     <br>
+
+    <!-- OUR TEAM -->
+      
+    <div class="team">
+
+        <h1>Nuestro equipo</h1>
+
+        <div class="row">
+
+            <div class="boxx">
+                <img src="../img/pagnosotros/team/t1.jpg">
+                <h2>Ruben Garcia</h2>
+                <h4>Desarrollador web</h4>
+                <h5>(+51)987654321</h5>
+                <h5>ruben123@gmail.com</h5>
+                <div class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
+            </div>
+
+            <div class="boxx">
+                <img src="../img/pagnosotros/team/t2.jpg">
+                <h2>Antonio Padua</h2>
+                <h4>Analista</h4>
+                <h5>(+51)987654321</h5>
+                <h5>ruben123@gmail.com</h5>
+                <div class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
+            </div>
+
+            <div class="boxx">
+                <img src="../img/pagnosotros/team/t3.jpg">
+                <h2>Vivian Roddro</h2>
+                <h4>Diseñadora gráfica</h4>
+                <h5>(+51)987654321</h5>
+                <h5>ruben123@gmail.com</h5>
+                <div class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <!------------------------  FOOTER  --------------------->
 
@@ -242,13 +300,10 @@
     
     <!---------------------------iMAGEN GRANDE ------------------>
     <script>
-		// whether the slideshow is paused or not
+		// pausa de la imagen
 		var paused = false;
 
-		// when you click on a thumbnail
-		// it sets the src of the big image
-		// to be the same as the image
-		// you clicked on
+		// iguala src de imagen grande al clickear img_chica
 		$(".crop-img").click(function(){
 			$("#bigImage").attr('src', 
 				$(this).attr('src'));
@@ -314,6 +369,8 @@
 		}, 5000);
 	</script>
 
+
+    
     
     <script type="text/javascript">
         $('.main-carousel').flickity({

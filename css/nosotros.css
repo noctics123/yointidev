@@ -11,30 +11,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.header{
-    background-color: #191818;
-    height: 85px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 5px 5%;
-    z-index: 1000;
-}
-
-
-body{
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url(./img/imgcab/cabnosotros.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    font-family: 'Gill Sans','Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
 /************************** *************************/
 .content-nos{
     background-color: #EDEDED;
@@ -83,7 +59,7 @@ body{
 .features{
     width: auto;
     height: 220px;
-    background: #FFB602; 
+    background: #ffc532; 
     display: flex;   
     justify-content: center;
     justify-items: center;
@@ -336,7 +312,19 @@ body{
 }
 
 /************************* GALLERY *************************/
+.gal{
+    background-color: #161616;
+    width: 100% !important;
+    margin-block-end: 50px;
+    height: 900px;
+}
 
+.letrasgal{
+    color: #EDEDED !important;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 10px;
+}
 
 .img-gallery img{
     width:100%;
@@ -344,26 +332,58 @@ body{
     transition: 1s;
 }
 
-
-.carousel__contenedor{
-    width: 100%;
+.carousel__lista{
     height: 100%;
-    justify-content: center;
+}
+.carousel__contenedor{
+    width: 70%;
+    height: 160px;
+    margin: 0 auto ;
 }
 .crop-img{
-    height: 100%;
-    width: 190%;
-    margin-bottom: 10px;
+    height: 70%;
+    border-radius: 15px;
+    border: #fdfdfd 1px solid;
 }
+
+.fa-chevron-left , .fa-chevron-right{
+    color: #FFB602;
+}
+
 
 .large-img{
     padding-top: 0px;
-    height: 470px;
-    max-width:500%;
-    margin-top: 10px;
+    height: 450px;
+    max-width:100%;
 }
 
+.bttnimg_big{
+    background-color: #ffffff00 !important;
+    height: 100%;
+    width: 50px;
+    margin: 0;
+    border: 0px;
+    border-radius: 0px 15px 15px 0px;
+}
 
+.fa-angle-double-left, .fa-angle-double-right{
+    color: #EDEDED;
+    font-size: 30px;
+    width: 50px;
+    line-height: 400px;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.bttnimg_big:hover{
+    background-color: #fafafa1f !important;
+    height: 100%;
+    width: 50px;
+    margin: 0;
+    border: 0px;
+    transition: .7s;
+    border-radius: 0px 15px 15px 0px;
+}
 
 /************************* OUR TEAM *************************/
 .team{

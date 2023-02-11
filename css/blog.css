@@ -11,17 +11,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.header{
-    background-color: #191818;
-    height: 85px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 5px 5%;
-    z-index: 1000;
-}
-
 
 body{
     justify-content: center;

@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 @import url('href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 *{
@@ -14,72 +11,6 @@
 
 body{
     background-color: #EDEDED;
-}
-.header{
-    background-color: #191818;
-    height: 85px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 5px 5%;
-    z-index: 1000;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    
-}
-.nav-link{
-    color: #EDEDED;
-    text-decoration: none;
-}
-
-.header .logo {
-    cursor: pointer;
-}
-.header .logo img{
-    height: 70px;
-    width: auto;
-}
-.nav-menu{
-    display: flex;
-    margin-right: 20px;
-    list-style: none;
-    padding: 0 10px;
-}
-
-.nav-menu-item{
-    font-size: 700;
-    color: #FFFFFF;
-    text-decoration: none;
-    line-height: 80px;
-    margin: 0 20px;
-    font-family:  'Inter', sans-serif;
-    width: max-content;
-   
-}
-.nav-menu li a:hover{
-    color: #FFB602;
-}
-.nav-menu li:hover{
-    transform: scale(1.1);
-}
-
-.nav-toggle {
-    color: white;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-    cursor: pointer;
-    
-    display: none;
-}
-
-.navtoggle:focus:not(:focus-visible){
-    outline:none;
 }
 
 /***************************************Mini NAV*************************************/
@@ -622,7 +553,7 @@ nav{
 }
 
 
-.prefooter{
+.footproy{
     margin-top: 0px;
     background-color: #4cabf8;
 }

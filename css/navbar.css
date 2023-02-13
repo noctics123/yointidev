@@ -20,19 +20,7 @@ body{
     z-index: 1000;
 }
 
-.linea-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.linea{
-    margin-top: 500px;
-    width: 50%;
-    border: solid #7F7F7F;
-    border-width: 1px;
-}
 .nav{
     display: flex;
     justify-content: space-between;

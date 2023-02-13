@@ -316,7 +316,7 @@ html{
     background-color: #161616;
     width: 100% !important;
     margin-block-end: 50px;
-    height: 900px;
+    height: 850px;
 }
 
 .letrasgal{
@@ -364,6 +364,7 @@ html{
     margin: 0;
     border: 0px;
     border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
 }
 
 .fa-angle-double-left, .fa-angle-double-right{
@@ -375,7 +376,7 @@ html{
     transform: translateY(-50%);
 }
 
-.bttnimg_big:hover{
+.bttbrigth:hover{
     background-color: #fafafa1f !important;
     height: 100%;
     width: 50px;
@@ -383,6 +384,16 @@ html{
     border: 0px;
     transition: .7s;
     border-radius: 0px 15px 15px 0px;
+}
+
+.bttbleft:hover{
+    background-color: #fafafa1f !important;
+    height: 100%;
+    width: 50px;
+    margin: 0;
+    border: 0px;
+    transition: .7s;
+    border-radius: 15px 0px 0px 15px;
 }
 
 /************************* OUR TEAM *************************/
@@ -466,6 +477,10 @@ html{
 
 
 /**************************  FOOTER *************************/
+.prefooter{
+    background-color: #161616;
+}
+
 .footer-1{
     width: 100%;
     background-color: #FFB602;

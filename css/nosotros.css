@@ -186,7 +186,7 @@ html{
     height: 100%;
     background: var(--clr);
     clip-path: circle(120px at center);
-    transition: .9s;
+    transition: 1.2s;
 }
 
 .cardmv:hover .circle::before{
@@ -207,7 +207,7 @@ html{
 
 .contentvision{
     position: relative;
-    width: 50%;
+    width: 55%;
     left: 20%;
     padding: 10px 10px 10px 30px;
     opacity: 0;
@@ -217,7 +217,7 @@ html{
 
 .contentmision{
     position: relative;
-    width: 50%;
+    width: 55%;
     left: 20%;
     padding: 10px 10px 10px 30px;
     opacity: 0;
@@ -235,11 +235,13 @@ html{
 .contentmision h1{
     color:#030303;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 1.5em;
     line-height: 1em;
+    font-weight: bold;
 }
 .contentmision h4{
     color:#000000;
+    font-size: 19px;
 }
 
 .cardmv:hover .contentvision{
@@ -253,11 +255,13 @@ html{
 .contentvision h1{
     color:#FFFFFF;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 1.5em;
     line-height: 1em;
+    font-weight: bold;
 }
 .contentvision h4{
     color:#FFFFFF;
+    font-size: 19px;
 }
 
 .cardmv .vision_img{
@@ -266,7 +270,7 @@ html{
     left: 20%;
     transform: translate(-50%,-50%) scale(0);
     height: 280px;
-    transition: 0.5s;
+    transition: 0.7s;
     transition-delay: 0s;
 }
 
@@ -319,11 +323,13 @@ html{
     height: 850px;
 }
 
-.letrasgal{
+
+.heading{
     color: #EDEDED !important;
     text-align: center;
     font-size: 3em;
-    padding-top: 10px;
+    margin: 0;
+    margin-top: 0px;
 }
 
 .img-gallery img{
@@ -344,26 +350,42 @@ html{
     height: 70%;
     border-radius: 15px;
     border: #fdfdfd 1px solid;
+    
 }
 
 .fa-chevron-left , .fa-chevron-right{
     color: #FFB602;
 }
 
+.row{
+    position: absolute;
+    display: flex;
+    place-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    margin: 0px !important;
+    padding-top: 15px !important;
+}
 
 .large-img{
+    
     padding-top: 0px;
     height: 450px;
     max-width:100%;
+    margin: 0px;
+    margin: 0px !important;
+    border: 0px !important;
+    padding: 0 !important;
 }
 
 .bttnimg_big{
     background-color: #ffffff00 !important;
     height: 100%;
     width: 50px;
-    margin: 0;
-    border: 0px;
-    border-radius: 0px 15px 15px 0px;
+    margin: 0px !important;
+    border: 0px !important;
+    border-radius: 15px 15px 15px 15px;
     cursor: pointer;
 }
 
@@ -374,8 +396,10 @@ html{
     line-height: 400px;
     position: relative;
     transform: translateY(-50%);
+    margin: 0px !important;
+    border: 0px !important;
+    padding: 0 !important;
 }
-
 .bttbrigth:hover{
     background-color: #fafafa1f !important;
     height: 100%;
@@ -383,7 +407,10 @@ html{
     margin: 0;
     border: 0px;
     transition: .7s;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0px !important;
+    border: 0px !important;
+    padding: 0 !important;
 }
 
 .bttbleft:hover{
@@ -393,7 +420,10 @@ html{
     margin: 0;
     border: 0px;
     transition: .7s;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0px !important;
+    border: 0px !important;
+    padding: 0 !important;
 }
 
 /************************* OUR TEAM *************************/

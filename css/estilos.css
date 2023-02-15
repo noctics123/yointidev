@@ -1223,3 +1223,39 @@ body{
     }               
 /*------------------------------------------------------------------------------------------------------------------*/
 
+form{
+    width: 80%;
+}
+
+form .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+form .field input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #161616 !important;
+    padding: 0 10px;
+    outline: none;
+    font-size: 17px;
+}
+
+form .btnsub input{
+    background-color: #4e1f5c;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    width: 150px;
+    height: 30px;
+    padding: 0;
+    cursor: pointer;
+}
+
+form .btnsub:hover input{
+    background-color: #161616;
+    color: #FFB602;
+    cursor: pointer;
+}

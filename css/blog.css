@@ -311,8 +311,9 @@ body{
 }
 .buttonart p{
     margin-right: 35px;
-    background-color: #5a5a5a77;
-    color: #ffffff !important;
+    background-color: #5a5a5a00;
+    color: #000000 !important;
+    font-weight: 600 !important;
     border-radius: 5px; 
 }
 .buttonart a{

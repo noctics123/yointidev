@@ -26,19 +26,32 @@ body{
     justify-content: center;
     align-items: baseline;
 }
-.nav2 {
+/*.nav2 {
     display: flex;
     list-style: none;
-} 
+} */
 
 .tittlesrvc{
     height: 80px;
     text-align: center;
 }
 
+@media(max-width:768px) {
+    .mini{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    .mini-nav .mini .container .row{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }   
+}
+
+
 .nav-mini-item{
     font-size: 25px;
-    color: #FFFFFF;
     text-decoration: none;
     line-height: 80px;
     margin: 0 20px;

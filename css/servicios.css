@@ -92,10 +92,6 @@ nav{
     justify-content: center;
     align-items: baseline;
 }
-.nav2 {
-    display: flex;
-    list-style: none;
-} 
 
 .tittlesrvc{
     height: 80px;
@@ -113,9 +109,23 @@ nav{
 }
 
 .nav-mini-link{
-    color: #080808;
+    color: #db221b !important;
     text-decoration: none;
 }
+
+@media(max-width:768px) {
+    .mini{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    .mini-nav .mini .container .row{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }   
+}
+
 .tittlesrvc a{
     position: relative;
     display: block;

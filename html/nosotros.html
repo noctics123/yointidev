@@ -7,7 +7,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='../css/nosotros.css'>
     <link rel='stylesheet' href='../css/estilos.css'>
+    <link rel="stylesheet" href="../css/flotante.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -23,29 +25,32 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 	<link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     
     <script defer src="../index.js"></script>
 </head>
 <body> 
     <!-- HEADER -->
-   <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <img src="../img/yiamarillo.png" alt="Logo de YoInti">
-        </div>
-        <button class="nav-toggle" aria-label="Abrir menú">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-menu ">
-          <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">Inicio</a></li>
-          <li class="nav-menu-item"><a href="./servicios.html" class="nav-menu-link nav-link">Servicios</a></li>
-          <li class="nav-menu-item"><a href="./proyectos.html" class="nav-menu-link nav-link">Proyectos</a></li>
-          <li class="nav-menu-item"><a href="./nosotros.html" class="nav-menu-link nav-link">Nosotros</a></li>
-          <li class="nav-menu-item"><a href="./blog.html" class="nav-menu-link nav-link">Blog</a></li>
-          <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
-      </ul>
-    </nav>
-   </header>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="../img/yiamarillo.png" alt="Logo de YoInti">
+            </div>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu ">
+              <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">Inicio</a></li>
+              <li class="nav-menu-item"><a href="./servicios.html" class="nav-menu-link nav-link">Servicios</a></li>
+              <li class="nav-menu-item"><a href="./proyectos.html" class="nav-menu-link nav-link">Proyectos</a></li>
+              <li class="nav-menu-item"><a href="./nosotros.html" class="nav-menu-link nav-link">Nosotros</a></li>
+              <li class="nav-menu-item"><a href="./blog.html" class="nav-menu-link nav-link">Blog</a></li>
+              <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+              <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link nav-link"><i href="./html/contacto.html" class="fas fa-user-tie"></i></a></li>
+              
+          </ul>
+        </nav>
+    </header>
        
     <!-- Titulo -->
     <div class="s-nosotros">
@@ -89,31 +94,33 @@
                 </div>
       
             </div>
-      </section>
+    </section>
 
     <!-- MISION Y VISION -->
     <h1 class="letrasmv">Visión <span> Misión</span></h1>
 
     <div class="mision-vision">
         <div class="cardmv">
-            <div class="circle" style="--clr:#000000">
+            <div class="circle" style="--clr:#161616">
                 <img src="../img/pagnosotros/mv/eye.png" class="eye">
             </div>
             <div class="contentvision">
                 <h1>Visión</h1>
-                <h4>Ser una empresa que va de la mano con los avances de la tecnología y la sociedad; comprometidos con las necesidades y logros de nuestros clientes.
+                <h4>Ser una empresa que va de la mano con los avances de la tecnología
+                     y la sociedad; comprometidos con las necesidades y logros de nuestros clientes.
                 </h4>
             </div>
             <img src="../img/pagnosotros/mv/imgmv.png" class="vision_img">
         </div>  
+
         <div class="cardmv">
             <div class="circle" style="--clr:#FFB602">
                 <img src="../img/pagnosotros/mv/point.png" class="eye">
             </div>
             <div class="contentmision">
                 <h1>Misión</h1>
-                <h4>Lorem ipsum dolor sit amet. Non nihil cupiditate aut galisum.
-                    Lorem ipsum dolor sit amet. Non nihil cupiditate aut galisum.
+                <h4>Proporcionar tecnologías innovadoras a medida de las necesidaes 
+                    empresariales, con el objetivo de incrementar su competitividad y productividad.
                 </h4>
             </div>
             <img src="../img/pagnosotros/mv/imgm.png" class="vision_img">
@@ -122,8 +129,11 @@
     
     <!-- GALERÍA -->
     <div class="contenedor gal">
-
-        <h1 class="letrasmv">Galería</h1>
+        <section class="about">
+            <div class="about-container">
+                  <h1 class="heading">Galería</h1>
+            </div>
+        </section>
 
         <div class="carousel">
             <div class="carousel__contenedor">
@@ -170,43 +180,62 @@
         <!-- img grande-->
         <div class="row">
 			<div class="col-md-1">
-				<button id="backward" >&lt;</button>
+				<button id="backward" class="bttnimg_big bttbleft">
+                    <i class="fas fa-angle-double-left"></i>
+                </button>
 			</div>
 			<div class="col-md-10">
 				<img id="bigImage" class="large-img" src="../img/2.png" alt="Rock and Roll Hall of Fame"/> 
 			</div>
 			<div class="col-md-1">
-				<button id="forward">&gt;</button>
+				<button id="forward" class="bttnimg_big bttbrigth">
+                    <i class="fas fa-angle-double-right"></i>
+                </button>
 			</div>
 		</div>
 
     </div>
 
-    <br>
-    <br>
 
-    <!-- FOOTER -->
+    <!------------------------  FOOTER  --------------------->
+
+    <div class="prefooter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#FFB602" fill-opacity="1" 
+        d="M0,256L48,250.7C96,245,192,235,288,245.3C384,256,480,288,576,288C672,288,768,256,864,250.7C960,245,1056,267,1152,266.7C1248,
+        267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,
+        320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+        </svg>
+    </div>
+  
     <footer class="footer-1">
+  
         <div class="g1">
             <!-- box1 -->
             <div class="box">
                 <figure>
                     <a href="#">
-                    <img class="imgfooter" src="img/yinegro.png" alt="logo footer"> 
+                    <img src="/img/yinegrolog.png" alt="logo footer"> 
                     </a>
                 </figure>
             </div>
-
             <!-- box2 -->
             <div class="box">
-                <h2>SUSCRÍBETE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur elit. </p> 
-                <button>Enviar</button> 
+                <h2>PARA MÁS INFORMACIÓN...</h2>
+                <form action="#">
+                  <div class="field">
+                    <input type="text" placeholder="Digíte su correo..." required>
+                  </div>
+                  <div class="field btnsub">
+                    <input type="submit" value="Suscribirse">
+                  </div>
+                </form> 
+            
             </div>
-
             <!-- box3 -->
             <div class="box">
-                <h2>SÍGUENOS</h2>
+                <h2>SÍGUENOS</h2>   
                 <div class="red-social">
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-instagram"></a>
@@ -215,33 +244,24 @@
                     <a href="#" class="fa fa-twitter"></a>
                 </div>
             </div>
-
+    </footer>
+  
+    <footer>
+        <div class="footer-2">
+            <small> 2022 - &copy;<b>Yo Inti</b> - Todos los Derechos Reservados.</small>
         </div>
+    </footer>
 
-
-        </footer>
-        
-        <footer>
-            <div class="footer-2">
-                <small> 2022 - &copy;<b>Yo Inti</b> - Todos los Derechos Reservados.</small>
-            </div>
-        </footer>
-
-        <script src="js/closeimg.js"></script>
-        
+    <script src="js/closeimg.js"></script>
         <!-- JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     
-
     <!---------------------------iMAGEN GRANDE ------------------>
     <script>
-		// whether the slideshow is paused or not
+		// pausa de la imagen
 		var paused = false;
 
-		// when you click on a thumbnail
-		// it sets the src of the big image
-		// to be the same as the image
-		// you clicked on
+		// iguala src de imagen grande al clickear img_chica
 		$(".crop-img").click(function(){
 			$("#bigImage").attr('src', 
 				$(this).attr('src'));
@@ -307,6 +327,8 @@
 		}, 5000);
 	</script>
 
+
+    
     
     <script type="text/javascript">
         $('.main-carousel').flickity({
@@ -322,6 +344,27 @@
     <script src="../js/app.js"></script>
 
 
+
+    <!-- BUTTON FLOTANTE-->
+    <div class="flotante">
+        <input type="checkbox" id="btn-mas">
+  
+        <div class="redes">
+          <i class="fab fa-whatsapp"></i>
+  
+          <i class="fab fa-facebook-f"></i>
+          
+          <i class="fab fa-linkedin-in"></i>
+  
+          <i class="far fa-paper-plane"></i>
+        </div>
+  
+        <div class="btn-mas">
+          <label for="btn-mas" class="fas fa-plus"></label>
+        </div>
+      </div>
+
+      
         
     </body>
 </html>        

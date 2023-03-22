@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EDEDED;
+    font-family: 'Poppins', sans-serif ;
+}
+
+.header{
+    background-color: #141414;
+    height: 85px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-left: 5%;
+    z-index: 1000;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-link{
+    color: #EDEDED;
+    text-decoration: none;
+}
+
+.header .logo {
+    cursor: pointer;
+    margin-top: 7px;
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+
+}
+.nav-menu{
+    display: flex;
+    margin-right: 20px;
+    list-style: none;
+    padding: 0 10px;
+}
+
+.nav-menu-item{
+    font-size: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 80px;
+    margin: 0 20px;
+    font-family:  'Inter', sans-serif;
+    width: max-content;
+    font-weight: bold;
+}
+.nav-menu li a:hover{
+    color: #FFB602;
+}
+.nav-menu li:hover{
+    transform: scale(1.1);
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    
+    display: none;
+}
+
+.navtoggle:focus:not(:focus-visible){
+    outline:none;
+}
+
+/*Modificando el css para dispositivos Móviles*/
+@media (max-width: 768px){
+   
+    .header{
+        height: 65px;
+    }
+    
+    .header .logo img{
+        height: 50px;
+        width: auto;
+        padding: 0 20px;
+    
+    }
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px ;
+        position: fixed;
+        background-color: #656464;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 230px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }  
+
+    .nav-menu-item{
+        line-height: 50px;    
+    }
+
+    .nav-toggle {
+        
+        display: block;
+    }
+
+    .nav-menu_visible{
+       left: 0;
+    }
+    
+    }

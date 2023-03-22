@@ -1,0 +1,64 @@
+
+#btn-mas{
+    display: none;
+}
+
+.flotante{
+    width: auto;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.redes i, .fa-plus{
+    display: flex;
+    text-decoration: none;
+    background: #FFB602;
+    color: white;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #5B1E6E;
+    transition: all 500ms ease;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.redes i:hover{
+    background: #36BBD8;
+    color: #FFB602;
+}
+
+.redes i{
+    margin-bottom: -35px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-mas:checked~ .redes i{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.fa-plus{
+    background: url(../img/flotante.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: #36bad800;
+}
+
+
+#btn-mas:checked ~ .btn-mas .fa-plus{
+    height: 70px;
+    width: 70px;
+    line-height: 60px;
+    text-align: center;
+    background: url(../img/flotante2.jpg);
+    background-position: center center;
+    background-size: cover;
+    font-size:25px;
+}

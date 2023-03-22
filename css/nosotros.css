@@ -11,30 +11,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.header{
-    background-color: #191818;
-    height: 85px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 5px 5%;
-    z-index: 1000;
-}
-
-
-body{
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url(./img/imgcab/cabnosotros.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    font-family: 'Gill Sans','Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
 /************************** *************************/
 .content-nos{
     background-color: #EDEDED;
@@ -83,7 +59,7 @@ body{
 .features{
     width: auto;
     height: 220px;
-    background: #FFB602; 
+    background: #ffc532; 
     display: flex;   
     justify-content: center;
     justify-items: center;
@@ -210,7 +186,7 @@ body{
     height: 100%;
     background: var(--clr);
     clip-path: circle(120px at center);
-    transition: .9s;
+    transition: 1.2s;
 }
 
 .cardmv:hover .circle::before{
@@ -231,7 +207,7 @@ body{
 
 .contentvision{
     position: relative;
-    width: 50%;
+    width: 55%;
     left: 20%;
     padding: 10px 10px 10px 30px;
     opacity: 0;
@@ -241,7 +217,7 @@ body{
 
 .contentmision{
     position: relative;
-    width: 50%;
+    width: 55%;
     left: 20%;
     padding: 10px 10px 10px 30px;
     opacity: 0;
@@ -259,11 +235,13 @@ body{
 .contentmision h1{
     color:#030303;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 1.5em;
     line-height: 1em;
+    font-weight: bold;
 }
 .contentmision h4{
     color:#000000;
+    font-size: 19px;
 }
 
 .cardmv:hover .contentvision{
@@ -277,11 +255,13 @@ body{
 .contentvision h1{
     color:#FFFFFF;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 1.5em;
     line-height: 1em;
+    font-weight: bold;
 }
 .contentvision h4{
     color:#FFFFFF;
+    font-size: 19px;
 }
 
 .cardmv .vision_img{
@@ -290,7 +270,7 @@ body{
     left: 20%;
     transform: translate(-50%,-50%) scale(0);
     height: 280px;
-    transition: 0.5s;
+    transition: 0.7s;
     transition-delay: 0s;
 }
 
@@ -336,7 +316,21 @@ body{
 }
 
 /************************* GALLERY *************************/
+.gal{
+    background-color: #161616;
+    width: 100% !important;
+    margin-block-end: 50px;
+    height: 850px;
+}
 
+
+.heading{
+    color: #EDEDED !important;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+    margin-top: 0px;
+}
 
 .img-gallery img{
     width:100%;
@@ -344,26 +338,93 @@ body{
     transition: 1s;
 }
 
-
-.carousel__contenedor{
-    width: 100%;
+.carousel__lista{
     height: 100%;
-    justify-content: center;
+}
+.carousel__contenedor{
+    width: 70%;
+    height: 160px;
+    margin: 0 auto ;
 }
 .crop-img{
-    height: 100%;
-    width: 190%;
-    margin-bottom: 10px;
+    height: 70%;
+    border-radius: 15px;
+    border: #fdfdfd 1px solid;
+    
+}
+
+.fa-chevron-left , .fa-chevron-right{
+    color: #FFB602;
+}
+
+.row{
+    position: absolute;
+    display: flex;
+    place-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    margin: 0px !important;
+    padding-top: 15px !important;
 }
 
 .large-img{
+    
     padding-top: 0px;
-    height: 470px;
-    max-width:500%;
-    margin-top: 10px;
+    height: 450px;
+    max-width:100%;
+    margin: 0px;
+    margin: 0px !important;
+    border: 0px !important;
+    padding: 0 !important;
 }
 
+.bttnimg_big{
+    background-color: #ffffff00 !important;
+    height: 100%;
+    width: 50px;
+    margin: 0px !important;
+    border: 0px !important;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+}
 
+.fa-angle-double-left, .fa-angle-double-right{
+    color: #EDEDED;
+    font-size: 30px;
+    width: 50px;
+    line-height: 400px;
+    position: relative;
+    transform: translateY(-50%);
+    margin: 0px !important;
+    border: 0px !important;
+    padding: 0 !important;
+}
+.bttbrigth:hover{
+    background-color: #fafafa1f !important;
+    height: 100%;
+    width: 50px;
+    margin: 0;
+    border: 0px;
+    transition: .7s;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0px !important;
+    border: 0px !important;
+    padding: 0 !important;
+}
+
+.bttbleft:hover{
+    background-color: #fafafa1f !important;
+    height: 100%;
+    width: 50px;
+    margin: 0;
+    border: 0px;
+    transition: .7s;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0px !important;
+    border: 0px !important;
+    padding: 0 !important;
+}
 
 /************************* OUR TEAM *************************/
 .team{
@@ -446,6 +507,10 @@ body{
 
 
 /**************************  FOOTER *************************/
+.prefooter{
+    background-color: #161616;
+}
+
 .footer-1{
     width: 100%;
     background-color: #FFB602;

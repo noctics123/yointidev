@@ -300,15 +300,12 @@ body {
 
 }
 
-/*--------------------------------------------------footer-------------------------------------------------------------*/
-
-
+/*-------------------------------------footer-------------------------------------*/
 .footer-1 {
     width: 100%;
     background-color: #FFB602;
 
 }
-
 
 .footer-1 .g1 {
     width: 100%;
@@ -452,7 +449,6 @@ body {
         flex-direction: column;
         height: 100%;
     }
-
 
     .mini-nav .mini .container .row .col-sm {
         justify-content: center;
@@ -636,9 +632,6 @@ body {
 
 
 
-
-
-
     .proyectos .paquetes {
         margin-top: -30px !important;
         width: 100%;
@@ -650,7 +643,6 @@ body {
     .proyectos .paquetes h5 {
         color: #191818;
         font-size: 10px !important;
-        visibility: ;
     }
 
 
@@ -701,7 +693,6 @@ body {
         align-items: center;
 
     }
-
 }
 
 /*------------------ slides ---------------------*/
@@ -767,8 +758,76 @@ body {
     justify-content: center;
 }
 
-
 .footproy {
     margin-top: 0px;
     background-color: rgb(29, 28, 28);
+}
+
+@media (max-width:768px){
+    .carousel-inner {
+        overflow: hidden;
+    }
+    
+    .caja1 {
+        padding-top: 35px;
+        width: 600px;
+        height: 380px;
+        margin: 35px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .caja1 h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        color: #fac849;
+    }
+    
+    .caja1 h6 {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 18px;
+        line-height: 35px;
+        color: #FFFFFF;
+    }
+    
+    .caja2 {
+        width: 600px;
+    }
+    
+    .caja2 ul {
+        display: flex;
+        padding: 0;
+        width: 600px;
+    }
+    
+    .caja2 li {
+        list-style: none;
+        width: 100%;
+    }
+    
+    .caja2 img {
+        list-style: none;
+        width: 100%;
+    }
+    
+    
+    .carousel {
+        width: 100%;
+        background-color: rgb(29, 28, 28);
+    }
+    
+    .contenido-slider {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(29, 28, 28);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footproy {
+        margin-top: 0px;
+        background-color: rgb(29, 28, 28);
+    }
 }

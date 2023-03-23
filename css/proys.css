@@ -1,0 +1,52 @@
+.cab-info-proyectos{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    justify-items: center;
+    margin:  0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tittle-proyectos{
+    display: grid;
+    place-items: center;
+}
+
+.info-proyectos{
+    width: 60%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+@media (max-width: 768px ){
+    .cab-info-proyectos{
+        width: 85%;
+        justify-content: space-between;
+        justify-items: center;
+        margin:  0 auto;
+        margin-top: -50px;
+        margin-bottom: 10px;
+        display: grid;
+        place-items: center;
+    }
+    
+    .tittle-proyectos{
+        display: grid;
+        place-items: center;
+    }
+
+    .tittle-proyectos h1{
+        font-weight: 600;
+    }
+    
+    .info-proyectos {
+        width: 100%;
+        text-align: justify;
+    }
+    .info-proyectos p{
+        width: 100%;
+        text-align: justify;
+        font-size: 15px !important;
+    }
+}

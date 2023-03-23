@@ -1160,12 +1160,10 @@ body{
                     }
 
                     .nav-menu_visible{
-                    left: 0;
+                        left: 0;
                     }
                     .home .home-slider .slide{
-                        
                         padding-top: 1rem;
-                        
                     }
                     /****************************************************************************************/
                     .about{

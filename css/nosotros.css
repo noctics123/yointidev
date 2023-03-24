@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans',sans-serif;
+}
+
+body{
+    margin: 0;
+    position: relative;
+    padding: 0;
 }
 
 html{
@@ -26,12 +37,15 @@ html{
 /** scroll nosotros **/
 
 .s-nosotros{
+    display: flex;
     background-image: url(../img/imgcab/cabproy.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    justify-content: center;
+    justify-items: center;
     height: 200px; 
-    margin-top: 85px;
+    padding: 0;
 }
 
 .tittle{
@@ -39,19 +53,37 @@ html{
     text-align: center;
     padding-top: .8em;
     font-size: 70px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
-    ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
+
+.about{
+    margin-top: -10px;
+    padding: 0;
+    margin-bottom: -25px;
+}
+
+.about-container .content p{
+    font-family: 'Poppins' !important;
+    font-size: 18px !important;
+    text-align: justify !important;
+}
+
 @media (max-width:768px){
     .s-nosotros{
         height: 100px; 
-        margin-top: 65px;
+        margin-top: 1px;
     }
     .tittle{
         color: azure;
         text-align: center;
-        padding-top: 0.35em;
+        padding-top: 0em;
         font-size: 45px;
+        font-family: 'Inter', sans-serif;
+    }
+    .about-container .content p{
+        width: 100%;
+        text-align: justify;
+        font-size: 14px !important;
     }
 }
 
@@ -74,7 +106,7 @@ html{
 }
 
 .features .container-cuadro .cuadro{
-    width: 350px;
+    width: 450px;
     height: 250px;
     overflow: hidden;
     border-style: solid;

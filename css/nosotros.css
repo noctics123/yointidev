@@ -22,6 +22,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 /************************** *************************/
 .content-nos{
     background-color: #EDEDED;
@@ -91,7 +92,7 @@ html{
 .features{
     width: auto;
     height: 220px;
-    background: #ffc532; 
+    background:#fdbe1e;
     display: flex;   
     justify-content: center;
     justify-items: center;
@@ -106,7 +107,7 @@ html{
 }
 
 .features .container-cuadro .cuadro{
-    width: 450px;
+    width: 440px;
     height: 250px;
     overflow: hidden;
     border-style: solid;
@@ -147,13 +148,14 @@ html{
     }
 
     .features .container-cuadro .cuadro{
-        width: 300px;
+        width: 100%;
         height: auto;
+        margin: 0;
     }
     .container-cuadro .cuadro svg{
         align-items: center;
-        width: 100px;
-        height: 80px;
+        width: 90% !important;
+        height: 40px;
     }
 
     .features .container-cuadro .cuadro p{
@@ -165,9 +167,7 @@ html{
     }
 }
 
-
-
-/****cards mision vision*****/
+/***************cards mision vision***************/
 .letrasmv{
     text-align: center;
     font-size: 3em;
@@ -322,27 +322,190 @@ html{
 }
 
 @media (max-width: 991px){
+    .letrasmv{
+        text-align: center;
+        font-size: 3em;
+        padding-top: 10px;
+    }
+    
+    .letrasmv span {
+        color: #FFB602;
+    }
+    
+    .cardmv{
+        position: relative;
+        width: 250px;
+        height: 250px;
+        margin: 0px 0px;
+        border-radius: 25px;
+        transition: 0s;
+        transition-delay: 0s;
+        display: flex;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        align-items: center;
+    }
+    
+    .cardmv:hover{
+        width: 400px;
+        transition-delay: 0s;
+    }
+    
+    .cardmv .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cardmv .circle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--clr);
+        clip-path: circle(120px at center);
+        transition: 1.2s;
+    }
+    
+    .cardmv:hover .circle::before{
+        clip-path: circle(370px at center);
+    }
+    
+    .cardmv .circle .eye{
+        position: relative;
+        width: 180px;
+        transition: .5s;
+        transition-delay:  0.5s;
+    }
+    
+    .cardmv:hover .circle .eye{
+        transform: scale(0);
+        transition-delay: 0.5s;
+    }
+    
+    .contentvision{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: 20%;
+        padding: 10px 10px 10px 30px;
+        opacity: 0;
+        transition: 0.5s;
+        visibility:visible;
+    }
+    
+    .contentmision{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: 20%;
+        padding: 10px 10px 10px 30px;
+        opacity: 0;
+        transition: 0.5s;
+        visibility:visible;
+    }
+    .cardmv:hover .contentmision{
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.5s;
+        z-index: 99;
+    }
+    
+    .contentmision h1{
+        color:#030303;
+        text-transform: uppercase;
+        font-size: 1em;
+        line-height: 1em;
+        font-weight: bold;
+    }
+    .contentmision h4{
+        color:#000000;
+        font-size: 14px;
+    }
+    
+    .cardmv:hover .contentvision{
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.5s;
+        z-index: 99;
+    }
+    
+    .contentvision h1{
+        color:#FFFFFF;
+        text-transform: uppercase;
+        font-size: 1em;
+        line-height: 1em;
+        font-weight: bold;
+    }
+    .contentvision h4{
+        color:#FFFFFF;
+        font-size: 14px;
+    }
+    
+    .cardmv .vision_img{
+        position: absolute;
+        top: 0%;
+        left: 20%;
+        transform: translate(0%,0%) scale(0);
+        height: 0px;
+        transition: 0.7s;
+        transition-delay: 0s;
+    }
+    
+    .cardmv:hover .vision_img{
+        left: 0%;
+        transform: translate(-50%,-42%) scale(1);
+        transition-delay: 0.5s;
+    }
+    
+    .mision-vision{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        height: 120%;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        content: center;
+        margin-bottom: 50px;
+    }
+
+    
+
     .cardmv{
         width: auto;
         max-width: 300px;
-        margin: 0px;
+        margin: 10px;
         align-items: flex-start;
     }
     .cardmv:hover{
-        height: 300px;
+        height: 250px;
     }
     .cardmv:hover .vision_img{
         top: initial;
-        bottom: 30px;
-        left: 50%;
-        transform: translate(-20%, 0%) scale(1);
+        margin: 0;
+        padding: 0;
+        bottom: 15px;
+        left: 20%;
+        transform: translate(20%, 0%) scale(1);
         height: 110px;
     }
 
     .cardmv .content{
         width: 100%;
         left: 0;
-        padding: 40px;
+        padding: 0px;
     }
     
 }
@@ -458,6 +621,111 @@ html{
     padding: 0 !important;
 }
 
+@media(max-width:768px){
+    .gal{
+        background-color: #161616;
+        width: 100% !important;
+        height: 100%;
+    }
+    
+    
+    .heading{
+        color: #EDEDED !important;
+        text-align: center;
+        font-size: 3em;
+        margin: 0;
+        margin-top: 0px;
+    }
+
+    .carousel__lista{
+        height: 100%;
+    }
+    .carousel__contenedor{
+        width: 80%;
+        height: 160px;
+        margin: 0 auto ;
+    }
+    .crop-img{
+        height: 70%;
+        border-radius: 15px;
+        border: #fdfdfd 1px solid;
+        
+    }
+    
+    .fa-chevron-left , .fa-chevron-right{
+        color: #FFB602;
+    }
+    
+    .row{
+        position: absolute;
+        display: flex;
+        place-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        margin: 0px !important;
+        padding-top: 15px !important;
+    }
+    
+    .large-img{
+        
+        padding-top: 0px;
+        height: 450px;
+        max-width:100%;
+        margin: 0px;
+        margin: 0px !important;
+        border: 0px !important;
+        padding: 0 !important;
+    }
+    
+    .bttnimg_big{
+        background-color: #ffffff00 !important;
+        height: 100%;
+        width: 50px;
+        margin: 0px !important;
+        border: 0px !important;
+        border-radius: 15px 15px 15px 15px;
+        cursor: pointer;
+    }
+    
+    .fa-angle-double-left, .fa-angle-double-right{
+        color: #EDEDED;
+        font-size: 30px;
+        width: 50px;
+        line-height: 400px;
+        position: relative;
+        transform: translateY(-50%);
+        margin: 0px !important;
+        border: 0px !important;
+        padding: 0 !important;
+    }
+    .bttbrigth:hover{
+        background-color: #fafafa1f !important;
+        height: 100%;
+        width: 50px;
+        margin: 0;
+        border: 0px;
+        transition: .7s;
+        border-radius: 15px 15px 15px 15px;
+        margin: 0px !important;
+        border: 0px !important;
+        padding: 0 !important;
+    }
+    
+    .bttbleft:hover{
+        background-color: #fafafa1f !important;
+        height: 100%;
+        width: 50px;
+        margin: 0;
+        border: 0px;
+        transition: .7s;
+        border-radius: 15px 15px 15px 15px;
+        margin: 0px !important;
+        border: 0px !important;
+        padding: 0 !important;
+    }
+
+}
 /************************* OUR TEAM *************************/
 .team{
     width: 100%;

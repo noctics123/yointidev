@@ -297,21 +297,12 @@ body{
     text-align: justify;
     font-family: 'Inter', sans-serif;
 }
-
-@media (max-width: 1268px){
-    .carousel-inner .carousel-item{
-        max-height: 300px !important;
-    }
-    .carousel-item .carousel-caption h1{
-        font-size: 40px !important;
-    }
-    .carousel-item .carousel-caption p{
-        font-size: 20px
-    }
-}
 @media (max-width: 768px){
+    .carousel-inner .carouselhome{
+        min-height: 200px !important;
+    }
     .carousel-inner .carousel-item{
-        max-height: 200px !important;
+        min-height: 200px !important;
     }
     .carousel-item .carousel-caption h1{
         font-size: 20px !important;
@@ -319,8 +310,10 @@ body{
     .carousel-item .carousel-caption p{
         display: none;
     }
+    .carousel-inner .carouselhome{
+        max-height: 200px !important;
+    }
 }
-
 /*------------------------- SERVICIOS -----------------------------*/
 .carousel-item{
     height: 500px;

@@ -253,7 +253,7 @@ body{
     float: left;
 }
 
-.about .about-container .heading{
+.about .about-container h1{
     font-size: 3rem;
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -261,12 +261,26 @@ body{
 }
 
 @media (max-width: 768px){
-    .about .about-container .heading{
-        font-size: 1.5rem;
+    
+    .about .about-container h1{
+        font-size: 2rem;
         font-family: 'Inter', sans-serif;
-        text-align: center;
+        text-align:justify;
         padding: 0 20px;
     }
+    .slideproyectos{
+        height: 150px !important;
+        margin: 0 !important;
+    }
+    .carousel-inner .carousel-item img{
+        height: 220px;
+        width:min-content;
+        background-size: cover;
+    }
+    .carousel-inner .carousel-item {
+        margin-top: 0px;
+    }
+    
 }
 
 .about .about-container .content p{
@@ -276,20 +290,6 @@ body{
     padding: 0 10px;
 }
 
-@media (max-width: 768px){
-    .about .about-container .content p{
-        padding: 0 1px;
-        line-height: 2;
-        text-align: justify;
-        font-size: 15px;
-        font-family: 'Inter', sans-serif;
-        font-size: 13px;
-        margin-bottom: 20px;
-        padding: 0 25px;
-        line-height: 1.7;
-    }
-}
-
 .about .row .content p{
     font-size: 15px;
     padding: 0 1px;
@@ -297,7 +297,23 @@ body{
     text-align: justify;
     font-family: 'Inter', sans-serif;
 }
-
+@media (max-width: 768px){
+    .carousel-inner .carouselhome{
+        min-height: 200px !important;
+    }
+    .carousel-inner .carousel-item{
+        min-height: 200px !important;
+    }
+    .carousel-item .carousel-caption h1{
+        font-size: 20px !important;
+    }
+    .carousel-item .carousel-caption p{
+        display: none;
+    }
+    .carousel-inner .carouselhome{
+        max-height: 200px !important;
+    }
+}
 /*------------------------- SERVICIOS -----------------------------*/
 .carousel-item{
     height: 500px;
@@ -468,7 +484,7 @@ body{
 }
 
 
-/* ------------------------- CARDS-PROYECTOS -------------------------------*/
+/* -------------------------CARDS-PROYECTO ----------------------------*/
 .cards{
     width: 100%;
 }
@@ -625,7 +641,7 @@ body{
 
 }
 
-/*--------------------------------Nosotros-------------------------------*/
+/*----------------------------Nosotros-------------------------*/
 .Nosotros{
     min-height: 100hv;
     width: 100%;
@@ -737,7 +753,7 @@ body{
 }
 
 
-/*----------------------------------------------Testimonios-------------------------------------------------------------*/
+/*------------------------Testimonios-----------------------*/
 .review{
     display: flex;
     align-items: center;
@@ -1245,7 +1261,31 @@ body{
                     }
 
                     
-    }               
+    }   
+    @media (max-width: 768px){
+        .about .about-container .content p{
+            padding: 0 1px;
+            line-height: 2;
+            text-align: justify;
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            margin-bottom: 20px;
+            padding: 0 25px;
+            line-height: 1.7;
+        }
+        .slideproyectos{
+            height: 200px !important;
+        }
+        .slideproyectos .carousel-control-prev .carousel-control-prev-icon{
+            height: 35px;
+            width: 35px;
+        }
+        .slideproyectos .carousel-control-next .carousel-control-next-icon{
+            height: 35px;
+            width: 35px;
+        }
+    }            
 /*------------------------------------------------------------------------------------------------------------------*/
 
 form{
